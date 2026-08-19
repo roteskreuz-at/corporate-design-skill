@@ -2,13 +2,13 @@
 """
 Baut aus den Design-Tokens (der One Place of Truth) alle Ausgabeformate:
 
-  dist/theme1.xml            korrigiertes Office-Farb- und Schriftschema (OOXML)
-  dist/OERK-Farben.ase       Adobe-Farbfeldbibliothek (RGB- und CMYK-Gruppe)
-  dist/oerk-farben.css       CSS-Custom-Properties fuer Web/Apps
-  dist/oerk-farben-flach.json  flacher Export fuer beliebige Werkzeuge
+  assets/dist/theme1.xml            korrigiertes Office-Farb- und Schriftschema (OOXML)
+  assets/dist/OERK-Farben.ase       Adobe-Farbfeldbibliothek (RGB- und CMYK-Gruppe)
+  assets/dist/oerk-farben.css       CSS-Custom-Properties fuer Web/Apps
+  assets/dist/oerk-farben-flach.json  flacher Export fuer beliebige Werkzeuge
 
 Grundprinzip: KEIN Wert steht in diesem Skript. Alle Farb- und Schriftwerte
-kommen aus tokens/color.tokens.json und tokens/typography.tokens.json.
+kommen aus data/tokens/color.tokens.json und data/tokens/typography.tokens.json.
 Wer eine Farbe aendern will, aendert sie dort - und baut neu.
 
 Aufruf:  python tools/build.py
@@ -19,18 +19,17 @@ import json
 import re
 import struct
 import sys
-import zipfile
 from pathlib import Path
 
 WURZEL = Path(__file__).resolve().parent.parent / "data"
-DIST = WURZEL / "dist"
+DIST = Path(__file__).resolve().parent.parent / "assets" / "dist"
 
 # Scaffold fuer das vollstaendige Theme (fmtScheme etc. werden uebernommen,
-# clrScheme und fontScheme durch Token-Werte ersetzt): die offizielle
-# PowerPoint-Vorlage 2026 vom Portal.
-SCAFFOLD_POTX = (WURZEL.parent / "belege" / "originaldateien" / "fileadmin" /
-                 "user_upload" / "Digitales_CD" / "Vorlagen" /
-                 "PRAES_OERK_DIGITAL_PP_2026_de-en-16-9_V1_13042026.potx")
+# clrScheme und fontScheme durch Token-Werte ersetzt). Extrahiert aus der
+# offiziellen PowerPoint-Vorlage 2026 des Portals (PRAES_OERK_DIGITAL_PP_2026,
+# ppt/theme/theme1.xml) und hier eingecheckt, damit der Build ohne das
+# 638-MB-Belegarchiv laeuft.
+SCAFFOLD_THEME = Path(__file__).resolve().parent / "theme-scaffold.xml"
 
 
 def lade_tokens():
@@ -88,8 +87,7 @@ def patch_fontscheme(theme_xml: str, haus: str, name: str) -> str:
 
 
 def baue_theme(farben, haus) -> str:
-    z = zipfile.ZipFile(SCAFFOLD_POTX)
-    xml = z.read("ppt/theme/theme1.xml").decode("utf-8")
+    xml = SCAFFOLD_THEME.read_text(encoding="utf-8")
     xml = patch_clrscheme(xml, farben, "ÖRK 2026")
     xml = patch_fontscheme(xml, haus, "ÖRK 2026")
     return xml
@@ -157,7 +155,7 @@ def baue_css(farben) -> str:
 
 def main():
     farben, haus = lade_tokens()
-    DIST.mkdir(exist_ok=True)
+    DIST.mkdir(parents=True, exist_ok=True)
 
     theme = baue_theme(farben, haus)
     (DIST / "theme1.xml").write_text(theme, encoding="utf-8")
@@ -172,7 +170,7 @@ def main():
 
     (DIST / "LIESMICH.md").write_text(
         "# ÖRK CD – erzeugte Ausgaben\n\n"
-        "Alle Dateien hier sind **automatisch erzeugt** aus `../tokens/`.\n"
+        "Alle Dateien hier sind **automatisch erzeugt** aus `data/tokens/` (Repo-Wurzel).\n"
         "Nichts von Hand bearbeiten – Änderungen gehören in die Tokens, danach `python tools/build.py`.\n\n"
         "| Datei | Zweck |\n|---|---|\n"
         "| `theme1.xml` | Office-Farb- und Schriftschema (ÖRK 2026). Ersetzt in DOTX/POTX den Teil `*/theme/theme1.xml`. |\n"

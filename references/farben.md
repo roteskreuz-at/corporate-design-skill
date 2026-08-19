@@ -19,7 +19,7 @@ Für Logorot gelten je nach Kanal unterschiedliche Regeln:
 | **Print/analog** | Logorot AUSSCHLIESSLICH im Wahrzeichen. VERBOTEN als Schriftfarbe, als farbiger Hintergrund und im Layout ("darf ansonsten NICHT MEHR eingesetzt werden"). |
 | **Digital** | Zusätzlich als Zusatzfarbe erlaubt: sparsam, max. 10 % Flächenanteil, für Call-to-Actions und Störer. Nicht großflächig, nicht identitätsstiftend. |
 
-Hinweis: color.tokens.json (Feld `widerspruch_logorot`, Status "ungeklaert") behandelte diese beiden Portalseiten noch als Widerspruch. Das ist als Kanalregel aufgelöst: Die restriktive Regel gilt für Print/analog, die 10-%-Zusatzfarben-Regel für Digital. Die JSON-Markierung ist damit überholt.
+Diese Auflösung ist auch in `data/tokens/color.tokens.json` hinterlegt (Feld `kanalregel_logorot`, Status "entschieden-kanalregel", 2026-08-19). Fachliche Bestätigung durch cd@roteskreuz.at steht aus.
 
 ## Primärfarben (alle Farbsysteme)
 
@@ -173,7 +173,7 @@ Systematischer Befund aus color.tokens.json: Das Theme der PowerPoint-Vorlage (P
 
 | Falscher Wert (Vorlage) | Richtiger Wert (offiziell) | Fundstelle des Fehlers |
 |---|---|---|
-| #B70F0B | **#B70E0C** | theme1.xml → a:accent1 |
+| #B70F0B | **#B70E0C** | theme1.xml → a:dk2 (ebenso a:hlink/a:folHlink) |
 | #B70E0B | **#B70E0C** | Folienlayout 10 "Aussage 1", hart eingetragener Hintergrund |
 | #D46D6E | **#D46E6E** | theme1.xml, Rotabstufung |
 | #C33C3C | **#C43D3D** | theme1.xml, Rotabstufung |

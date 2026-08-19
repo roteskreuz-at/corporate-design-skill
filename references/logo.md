@@ -164,7 +164,9 @@ Lokal unter `assets/logos/` (relativ zum Skill-Verzeichnis) liegen:
 | `assets/logos/basislogo/` | `OERK_Basislogo_sw.eps` | Basislogo deutsch, Schwarz-Weiß-EPS |
 | `assets/logos/sonderlogo/` | `OERK_Sonderlogo_rgb.jpg` | Sonderlogo, RGB-JPG |
 | `assets/logos/sonderlogo/` | `OERK_Sonderlogo_cmyk.eps` | Sonderlogo, CMYK-EPS |
-| `assets/logos/jrk/` | `OEJRK_B_1z_slogan_unten_rgb.jpg` | ÖJRK-Logo einzeilig, Slogan unten, RGB-JPG |
-| `assets/logos/jrk/` | `OEJRK_B_1z_slogan_unten_cmyk.eps` | ÖJRK-Logo einzeilig, Slogan unten, CMYK-EPS |
+| `assets/logos/jrk/` | `OEJRK_ueberreg_1z_slogan_unten_rgb.jpg` | ÖJRK-Logo überregional, einzeilig, Slogan unten, RGB-JPG |
+| `assets/logos/jrk/` | `OEJRK_ueberreg_1z_slogan_unten_cmyk.eps` | ÖJRK-Logo überregional, einzeilig, Slogan unten, CMYK-EPS |
+
+Die JPG-Dateien haben weißen Hintergrund und keine Transparenz. VERBOTEN: das Logo aus einem JPG freistellen oder nachbauen — für transparente bzw. skalierbare Einsätze immer die EPS-Datei verwenden (bzw. beim Basislogo das PNG).
 
 Pflicht: Für jede Gestaltung ausschließlich diese Originaldateien (bzw. Portal-Downloads) einsetzen — niemals das Logo oder das rote Kreuz nachbauen, nachzeichnen oder generieren (siehe `references/emblemrecht.md`). Hauptlogo-Dateien (mit Slogan/Landesverband) sind im Skill nicht enthalten — bei Bedarf über die Portal-Links oben beziehen.

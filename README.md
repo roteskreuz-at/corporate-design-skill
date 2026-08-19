@@ -50,7 +50,9 @@ offiziellen Ersatzschriften Arial/Helvetica.
 
 ## Pflege
 
-1. Portal neu erheben: `python3 tools/crawl_portal.py quellen/portal-neu` und diffen
+1. Portal neu erheben: `python3 tools/crawl_portal.py /tmp/portal-scrape`, dann
+   `text/*.md` gegen `quellen/portal/` diffen und übernehmen sowie
+   `seiten-index.json` nach `quellen/` kopieren
 2. Werte ändern nur in `data/tokens/`, dann `python3 tools/validate.py` (0 Fehler)
    und `python3 tools/build.py`
 3. Referenzen unter `references/` nachziehen

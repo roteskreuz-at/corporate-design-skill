@@ -195,11 +195,11 @@ def pruefe_tokens():
     for pfad in sorted((WURZEL / TOKEN_ORDNER).glob("*.tokens.json")):
         daten = lade(pfad) or {}
         ext = daten.get("$extensions", {}).get("at.roteskreuz.cd", {})
-        konflikt = ext.get("konflikt_primaerrot")
-        if konflikt and konflikt.get("status") == "ungeklaert":
-            w(f"{pfad.name}: Primaerfarbe ist als ungeklaert markiert "
-              f"({len(konflikt.get('beobachtete_werte', []))} abweichende Fassungen). "
-              f"Keine Druckproduktion aus dieser Quelle.")
+        for schluessel in ("konflikt_primaerrot", "widerspruch_logorot", "kanalregel_logorot"):
+            konflikt = ext.get(schluessel)
+            if konflikt and konflikt.get("status") == "ungeklaert":
+                w(f"{pfad.name}: '{schluessel}' ist als ungeklaert markiert. "
+                  f"Bis zur Klaerung gilt die restriktivere Auslegung.")
 
 
 # ------------------------------------------------------- 5. Governance / Pflege

@@ -1,6 +1,5 @@
 {
   "$description": "ÖRK Farb-Token im W3C Design Tokens Format (DTCG 2025.10). Werte aus dem offiziellen Styleguide design.roteskreuz.at (Grundelemente → Farben, analoge und digitale Anwendungen), abgerufen am 2026-08-04.",
-
   "$extensions": {
     "at.roteskreuz.cd": {
       "record": {
@@ -9,11 +8,25 @@
         "verbindlichkeit": "cd-verbindlich",
         "quellenlage": "offiziell-vollstaendig",
         "sichtbarkeit": "oeffentlich",
-        "governance": { "owner": "cd@roteskreuz.at", "review_intervall_monate": 12, "geprueft_am": null },
+        "governance": {
+          "owner": "cd@roteskreuz.at",
+          "review_intervall_monate": 12,
+          "geprueft_am": null
+        },
         "provenance": {
           "quellen": [
-            { "typ": "webseite", "bezeichnung": "ÖRK Styleguide – Farben, Analoge Anwendungen", "fundstelle": "https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen", "abgerufen_am": "2026-08-04" },
-            { "typ": "webseite", "bezeichnung": "ÖRK Styleguide – Farben, Digitale Anwendungen", "fundstelle": "https://design.roteskreuz.at/grundelemente/farben/digitale-anwendungen", "abgerufen_am": "2026-08-04" }
+            {
+              "typ": "webseite",
+              "bezeichnung": "ÖRK Styleguide – Farben, Analoge Anwendungen",
+              "fundstelle": "https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen",
+              "abgerufen_am": "2026-08-04"
+            },
+            {
+              "typ": "webseite",
+              "bezeichnung": "ÖRK Styleguide – Farben, Digitale Anwendungen",
+              "fundstelle": "https://design.roteskreuz.at/grundelemente/farben/digitale-anwendungen",
+              "abgerufen_am": "2026-08-04"
+            }
           ],
           "methode": "ki-extraktion",
           "werkzeug": "Claude Opus 5 / Claude Code",
@@ -21,115 +34,738 @@
           "human_verified": false
         }
       },
-
       "korrektur_2026_08_04": "Der frühere Vermerk, das ÖRK-Rot sei ungeklärt, ist ÜBERHOLT. Der Styleguide definiert zwei Rottöne bewusst und vollständig, inklusive Pantone, HKS, CMYK, RAL und RGB. Der Wert #B70E0C (Dunkelrot) ist der offiziell verbindliche Arbeitswert. Die abweichenden Fassungen #B70F0B und #B70E0B stammen ausschließlich aus der PowerPoint-Vorlage und sind dort fehlerhaft hinterlegt – nicht umgekehrt.",
-
       "abweichungen_in_vorlagen": {
-        "beschreibung": "Systematischer Befund: Das Theme der POTX 2026 führt die offizielle Rotreihe durchgängig leicht verfälscht. Nicht nur der Primärwert, sondern vier von sechs Abstufungen weichen ab. Die Vorlage ist gegen diese Datei zu korrigieren.",
+        "beschreibung": "Systematischer Befund: Das Theme der POTX 2026 führt die offizielle Rotreihe durchgängig leicht verfälscht und das Office-Standardgrau statt des ÖRK-Graus. Rollenzuordnung des Themes: dk2 = Arbeitsrot (Dunkelrot), lt2 = Grau, accent1–6 = Rotreihe dunkel→hell. Die Vorlage ist gegen diese Datei zu korrigieren. Fundstellen verifiziert gegen ppt/theme/theme1.xml der Originaldatei (2026-08-19).",
         "faelle": [
-          { "offiziell": "#B70E0C", "in_vorlage": "#B70F0B", "fundstelle": "theme1.xml → a:accent1" },
-          { "offiziell": "#B70E0C", "in_vorlage": "#B70E0B", "fundstelle": "Folienlayout 10 „Aussage 1“, hart eingetragener Hintergrund statt Theme-Referenz" },
-          { "offiziell": "#D46E6E", "in_vorlage": "#D46D6E", "fundstelle": "theme1.xml, Rotabstufung" },
-          { "offiziell": "#C43D3D", "in_vorlage": "#C33C3C", "fundstelle": "theme1.xml, Rotabstufung" },
-          { "offiziell": "#8A0A0A", "in_vorlage": "#89090A", "fundstelle": "theme1.xml, Rotabstufung" },
-          { "offiziell": "#5C0805", "in_vorlage": "#5B0804", "fundstelle": "theme1.xml, Rotabstufung" }
+          {
+            "offiziell": "#B70E0C",
+            "in_vorlage": "#B70F0B",
+            "fundstelle": "theme1.xml → a:dk2 (ebenso a:hlink und a:folHlink)"
+          },
+          {
+            "offiziell": "#B70E0C",
+            "in_vorlage": "#B70E0B",
+            "fundstelle": "Folienlayout 10 „Aussage 1“, hart eingetragener Hintergrund statt Theme-Referenz"
+          },
+          {
+            "offiziell": "#D46E6E",
+            "in_vorlage": "#D46D6E",
+            "fundstelle": "theme1.xml → a:accent4"
+          },
+          {
+            "offiziell": "#C43D3D",
+            "in_vorlage": "#C33C3C",
+            "fundstelle": "theme1.xml → a:accent3"
+          },
+          {
+            "offiziell": "#8A0A0A",
+            "in_vorlage": "#89090A",
+            "fundstelle": "theme1.xml → a:accent2"
+          },
+          {
+            "offiziell": "#5C0805",
+            "in_vorlage": "#5B0804",
+            "fundstelle": "theme1.xml → a:accent1"
+          },
+          {
+            "offiziell": "#838383",
+            "in_vorlage": "#808080",
+            "fundstelle": "theme1.xml → a:lt2 (Office-Standardgrau statt ÖRK-Grau)"
+          }
         ]
       },
-
-      "widerspruch_logorot": {
-        "status": "ungeklaert",
-        "beschreibung": "Die Seite „Analoge Anwendungen“ verbietet Logorot außerhalb des Wahrzeichens ausdrücklich und mit Ausrufezeichen: „darf ansonsten NICHT MEHR eingesetzt werden (weder als Schriftfarbe noch als farbiger Hintergrund etc.)“. Die Seite „Digitale Anwendungen“ führt Logorot dagegen als Zusatzfarbe, die sparsam (max. 10 % Flächenanteil) für Call-to-Actions und Störer eingesetzt werden darf.",
-        "auswirkung": "Ein maschineller Konsument, der beide Seiten liest, erhält zwei einander widersprechende Regeln für dieselbe Farbe. Bis zur Klärung gilt hier die restriktivere Auslegung.",
-        "zustaendig": "cd@roteskreuz.at"
+      "kanalregel_logorot": {
+        "status": "entschieden-kanalregel",
+        "entschieden_am": "2026-08-19",
+        "entschieden_von": "Skill-Autor (nicht ÖRK-freigegeben)",
+        "beschreibung": "Die Seiten 'Analoge Anwendungen' und 'Digitale Anwendungen' regeln unterschiedliche Kanäle, kein Widerspruch: PRINT/ANALOG — Logorot ausschließlich im Wahrzeichen, verboten als Schriftfarbe, Hintergrund und im Layout. DIGITAL — zusätzlich als Zusatzfarbe erlaubt: sparsam, max. 10 % Flächenanteil, für Call-to-Actions und Störer.",
+        "hinweis": "Fachliche Bestätigung durch cd@roteskreuz.at steht aus."
       }
     }
   },
-
   "farbe": {
     "$type": "color",
-
     "basis": {
       "$description": "Offizielle Farbwerte. Nie direkt verwenden – immer über die semantischen Token referenzieren.",
-
       "logorot": {
-        "$value": { "colorSpace": "srgb", "components": [1, 0, 0], "alpha": 1, "hex": "#FF0000" },
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0,
+            0
+          ],
+          "alpha": 1,
+          "hex": "#FF0000"
+        },
         "$description": "Das helle, strahlende Rot des Wahrzeichens. AUSSCHLIESSLICH dem roten Kreuz im Logo vorbehalten.",
-        "$extensions": { "at.roteskreuz.cd": {
-          "pantone": "485 C", "hks": "13K", "ral": "3020", "cmyk": [0, 100, 100, 0],
-          "nur_fuer": "Wahrzeichen im Logo",
-          "verbot": "Nicht als Schriftfarbe, nicht als Hintergrund, nicht im Layout. Siehe widerspruch_logorot."
-        } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "pantone": "485 C",
+            "hks": "13K",
+            "ral": "3020",
+            "cmyk": [
+              0,
+              100,
+              100,
+              0
+            ],
+            "nur_fuer": "Wahrzeichen im Logo",
+            "verbot": "Print/analog: nicht als Schriftfarbe, nicht als Hintergrund, nicht im Layout — nur im Wahrzeichen. Digital: als Zusatzfarbe max. 10 % Flächenanteil für CTAs/Störer erlaubt. Siehe kanalregel_logorot."
+          }
+        }
       },
-
       "dunkelrot": {
-        "$value": { "colorSpace": "srgb", "components": [0.7176, 0.0549, 0.0471], "alpha": 1, "hex": "#B70E0C" },
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7176,
+            0.0549,
+            0.0471
+          ],
+          "alpha": 1,
+          "hex": "#B70E0C"
+        },
         "$description": "Der Arbeitston des CD. Aus dem Rot des Wahrzeichens entwickelt. Wird ausschließlich mit 100 % Deckkraft eingesetzt.",
-        "$extensions": { "at.roteskreuz.cd": {
-          "pantone": "1805 C", "hks": "15K", "ral": "3002", "cmyk": [0, 100, 100, 25]
-        } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "pantone": "1805 C",
+            "hks": "15K",
+            "ral": "3002",
+            "cmyk": [
+              0,
+              100,
+              100,
+              25
+            ]
+          }
+        }
       },
-
       "schwarz": {
-        "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 1, "hex": "#000000" },
-        "$extensions": { "at.roteskreuz.cd": { "pantone": "Black 6 C / Black C", "hks": "88", "ral": "9017", "cmyk": [0, 0, 0, 100] } }
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 1,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "pantone": "Black 6 C / Black C",
+            "hks": "88",
+            "ral": "9017",
+            "cmyk": [
+              0,
+              0,
+              0,
+              100
+            ]
+          }
+        }
       },
       "weiss": {
-        "$value": { "colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF" },
-        "$extensions": { "at.roteskreuz.cd": { "ral": "9003 (Signalweiß)", "cmyk": [0, 0, 0, 0] } }
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "9003 (Signalweiß)",
+            "cmyk": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
       },
       "grau": {
-        "$value": { "colorSpace": "srgb", "components": [0.5137, 0.5137, 0.5137], "alpha": 1, "hex": "#838383" },
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5137,
+            0.5137,
+            0.5137
+          ],
+          "alpha": 1,
+          "hex": "#838383"
+        },
         "$description": "Auch die Farbe des Landesverbandszusatzes (Balken) und des Wahrzeichens in der Schwarz-Weiß-Version: jeweils 50 % Schwarz.",
-        "$extensions": { "at.roteskreuz.cd": { "pantone": "430 C", "hks": "88 bei 50 %", "ral": "7042", "cmyk": [0, 0, 0, 50] } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "pantone": "430 C",
+            "hks": "88 bei 50 %",
+            "ral": "7042",
+            "cmyk": [
+              0,
+              0,
+              0,
+              50
+            ]
+          }
+        }
       },
       "dunkelblau": {
-        "$value": { "colorSpace": "srgb", "components": [0, 0.1765, 0.3333], "alpha": 1, "hex": "#002D55" },
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0.1765,
+            0.3333
+          ],
+          "alpha": 1,
+          "hex": "#002D55"
+        },
         "$description": "Digitale Zusatzfarbe, sparsam einsetzen (max. 10 % Flächenanteil).",
-        "$extensions": { "at.roteskreuz.cd": { "ral": "5026", "cmyk": [100, 45, 0, 65] } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "5026",
+            "cmyk": [
+              100,
+              45,
+              0,
+              65
+            ]
+          }
+        }
       },
-
-      "rot-05": { "$value": { "colorSpace": "srgb", "components": [0.9569, 0.8627, 0.8588], "alpha": 1, "hex": "#F4DCDB" }, "$extensions": { "at.roteskreuz.cd": { "ral": "9001", "cmyk": [5, 20, 10, 0] } } },
-      "rot-20": { "$value": { "colorSpace": "srgb", "components": [0.8902, 0.6196, 0.6196], "alpha": 1, "hex": "#E39E9E" }, "$extensions": { "at.roteskreuz.cd": { "ral": "3015", "cmyk": [10, 45, 30, 0] } } },
-      "rot-40": { "$value": { "colorSpace": "srgb", "components": [0.8314, 0.4314, 0.4314], "alpha": 1, "hex": "#D46E6E" }, "$extensions": { "at.roteskreuz.cd": { "ral": "4010", "cmyk": [15, 65, 45, 5] } } },
-      "rot-60": { "$value": { "colorSpace": "srgb", "components": [0.7686, 0.2392, 0.2392], "alpha": 1, "hex": "#C43D3D" }, "$extensions": { "at.roteskreuz.cd": { "ral": "3020", "cmyk": [15, 85, 75, 5] } } },
-      "rot-80": { "$value": { "colorSpace": "srgb", "components": [0.5412, 0.0392, 0.0392], "alpha": 1, "hex": "#8A0A0A" }, "$extensions": { "at.roteskreuz.cd": { "ral": "3002", "cmyk": [30, 100, 100, 35] } } },
-      "rot-95": { "$value": { "colorSpace": "srgb", "components": [0.3608, 0.0314, 0.0196], "alpha": 1, "hex": "#5C0805" }, "$extensions": { "at.roteskreuz.cd": { "ral": "3005", "cmyk": [35, 100, 90, 60] } } },
-
-      "blau-hell": { "$value": { "colorSpace": "srgb", "components": [0.7059, 0.8471, 0.9216], "alpha": 1, "hex": "#B4D8EB" }, "$extensions": { "at.roteskreuz.cd": { "ral": "5024", "cmyk": [35, 5, 5, 0] } } },
-      "blau-mittel": { "$value": { "colorSpace": "srgb", "components": [0, 0.3961, 0.6275], "alpha": 1, "hex": "#0065A0" }, "$extensions": { "at.roteskreuz.cd": { "ral": "5005", "cmyk": [90, 55, 10, 0] } } },
-
-      "grau-hell": { "$value": { "colorSpace": "srgb", "components": [0.7765, 0.7765, 0.7765], "alpha": 1, "hex": "#C6C6C6" }, "$extensions": { "at.roteskreuz.cd": { "ral": "7047", "cmyk": [25, 20, 20, 0] } } },
-      "grau-flaeche": { "$value": { "colorSpace": "srgb", "components": [0.9647, 0.9647, 0.9647], "alpha": 1, "hex": "#F6F6F6" }, "$extensions": { "at.roteskreuz.cd": { "ral": "7035", "cmyk": [5, 5, 5, 0] } } }
+      "rot-05": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9569,
+            0.8627,
+            0.8588
+          ],
+          "alpha": 1,
+          "hex": "#F4DCDB"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "9001",
+            "cmyk": [
+              5,
+              20,
+              10,
+              0
+            ]
+          }
+        }
+      },
+      "rot-20": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8902,
+            0.6196,
+            0.6196
+          ],
+          "alpha": 1,
+          "hex": "#E39E9E"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "3015",
+            "cmyk": [
+              10,
+              45,
+              30,
+              0
+            ]
+          }
+        }
+      },
+      "rot-40": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8314,
+            0.4314,
+            0.4314
+          ],
+          "alpha": 1,
+          "hex": "#D46E6E"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "4010",
+            "cmyk": [
+              15,
+              65,
+              45,
+              5
+            ]
+          }
+        }
+      },
+      "rot-60": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7686,
+            0.2392,
+            0.2392
+          ],
+          "alpha": 1,
+          "hex": "#C43D3D"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "3020",
+            "cmyk": [
+              15,
+              85,
+              75,
+              5
+            ]
+          }
+        }
+      },
+      "rot-80": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5412,
+            0.0392,
+            0.0392
+          ],
+          "alpha": 1,
+          "hex": "#8A0A0A"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "3002",
+            "cmyk": [
+              30,
+              100,
+              100,
+              35
+            ]
+          }
+        }
+      },
+      "rot-95": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3608,
+            0.0314,
+            0.0196
+          ],
+          "alpha": 1,
+          "hex": "#5C0805"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "3005",
+            "cmyk": [
+              35,
+              100,
+              90,
+              60
+            ]
+          }
+        }
+      },
+      "blau-hell": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7059,
+            0.8471,
+            0.9216
+          ],
+          "alpha": 1,
+          "hex": "#B4D8EB"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "5024",
+            "cmyk": [
+              35,
+              5,
+              5,
+              0
+            ]
+          }
+        }
+      },
+      "blau-mittel": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0.3961,
+            0.6275
+          ],
+          "alpha": 1,
+          "hex": "#0065A0"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "5005",
+            "cmyk": [
+              90,
+              55,
+              10,
+              0
+            ]
+          }
+        }
+      },
+      "grau-hell": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7765,
+            0.7765,
+            0.7765
+          ],
+          "alpha": 1,
+          "hex": "#C6C6C6"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "7047",
+            "cmyk": [
+              25,
+              20,
+              20,
+              0
+            ]
+          }
+        }
+      },
+      "grau-flaeche": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9647,
+            0.9647,
+            0.9647
+          ],
+          "alpha": 1,
+          "hex": "#F6F6F6"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "ral": "7035",
+            "cmyk": [
+              5,
+              5,
+              5,
+              0
+            ]
+          }
+        }
+      }
     },
-
     "semantisch": {
       "$description": "Diese Token werden in Gestaltung und Vorlagen referenziert.",
-
-      "emblem-rot":       { "$value": "{farbe.basis.logorot}", "$description": "Farbe des roten Kreuzes im Logo. Unterliegt L0-recht: immer deckend, immer auf Weiß. Siehe rules/emblem-recht.json." },
-      "emblem-grund":     { "$value": "{farbe.basis.weiss}", "$description": "Hintergrund von Logo und Schutzzone. Rechtlich und gestalterisch zwingend Weiß." },
-      "logo-schriftzug":  { "$value": "{farbe.basis.schwarz}", "$description": "Schriftzug „ÖSTERREICHISCHES ROTES KREUZ“ und Slogan: 100 % Schwarz." },
-      "logo-lv-balken":   { "$value": "{farbe.basis.grau}", "$description": "Landesverbandszusatz: 50 % Schwarz." },
-
-      "akzent":           { "$value": "{farbe.basis.dunkelrot}", "$description": "Überschriften, Infoleiste, flächiger Hintergrund für Typografie. Nur 100 % Deckkraft." },
-      "text-koerper":     { "$value": "{farbe.basis.schwarz}" },
-      "text-sekundaer":   { "$value": "{farbe.basis.grau}" },
-      "flaeche-standard": { "$value": "{farbe.basis.weiss}" },
-      "flaeche-gedaempft":{ "$value": "{farbe.basis.grau-flaeche}" },
-      "infobox-flaeche":  { "$value": "{farbe.basis.rot-05}" },
-      "cta":              { "$value": "{farbe.basis.dunkelblau}", "$description": "Digitale Zusatzfarbe für Call-to-Action. Max. 10 % Flächenanteil." }
+      "emblem-rot": {
+        "$value": "{farbe.basis.logorot}",
+        "$description": "Farbe des roten Kreuzes im Logo. Unterliegt L0-recht: immer deckend, immer auf Weiß. Siehe rules/emblem-recht.json."
+      },
+      "emblem-grund": {
+        "$value": "{farbe.basis.weiss}",
+        "$description": "Hintergrund von Logo und Schutzzone. Rechtlich und gestalterisch zwingend Weiß."
+      },
+      "logo-schriftzug": {
+        "$value": "{farbe.basis.schwarz}",
+        "$description": "Schriftzug „ÖSTERREICHISCHES ROTES KREUZ“ und Slogan: 100 % Schwarz."
+      },
+      "logo-lv-balken": {
+        "$value": "{farbe.basis.grau}",
+        "$description": "Landesverbandszusatz: 50 % Schwarz."
+      },
+      "akzent": {
+        "$value": "{farbe.basis.dunkelrot}",
+        "$description": "Überschriften, Infoleiste, flächiger Hintergrund für Typografie. Nur 100 % Deckkraft."
+      },
+      "text-koerper": {
+        "$value": "{farbe.basis.schwarz}"
+      },
+      "text-sekundaer": {
+        "$value": "{farbe.basis.grau}"
+      },
+      "flaeche-standard": {
+        "$value": "{farbe.basis.weiss}"
+      },
+      "flaeche-gedaempft": {
+        "$value": "{farbe.basis.grau-flaeche}"
+      },
+      "infobox-flaeche": {
+        "$value": "{farbe.basis.rot-05}"
+      },
+      "cta": {
+        "$value": "{farbe.basis.dunkelrot}",
+        "$description": "Call-to-Action-Buttons: Standard Dunkelrot auf weißem Hintergrund, Schrift Weiß; auf farbigem Hintergrund weißer CTA mit dunkelroter Schrift. Blau, Grau oder Logorot nur selten (Quelle: design.roteskreuz.at/digital/gestaltungselemente/cta). Korrigiert 2026-08-19, vorher fälschlich Dunkelblau."
+      }
     },
-
     "verboten": {
       "$description": "Negativliste für automatische Prüfung.",
       "gold": {
-        "$value": { "colorSpace": "srgb", "components": [0.8314, 0.6863, 0.2157], "alpha": 1, "hex": "#D4AF37" },
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8314,
+            0.6863,
+            0.2157
+          ],
+          "alpha": 1,
+          "hex": "#D4AF37"
+        },
         "$description": "VERBOTEN – Gold kommt im ÖRK-CD nicht vor. Wert dient nur der Erkennung.",
-        "$extensions": { "at.roteskreuz.cd": { "verboten": true } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "verboten": true
+          }
+        }
       },
       "kreuz-invertiert-grund": {
         "$value": "{farbe.basis.logorot}",
         "$description": "VERBOTEN als Emblem-Hintergrund. Weißes Kreuz auf rotem Grund ist das Schweizer Wappen (RKG § 8 Abs. 2). Ebenso untersagt der Styleguide ausdrücklich „inverse Schrift/Kontur“ und „Logo auf Bild ohne weißen Hintergrund“.",
-        "$extensions": { "at.roteskreuz.cd": { "verboten": true, "ebene": "L0-recht" } }
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "verboten": true,
+            "ebene": "L0-recht"
+          }
+        }
+      }
+    },
+    "akzent": {
+      "$description": "Akzentfarben für Infografiken/Diagramme und thematische Farbleitsysteme. Einsatz genehmigungspflichtig durch das ÖRK-Generalsekretariat (cd@roteskreuz.at). Quelle: CD-Handbuch fileadmin/user_upload/Print/Grundelemente/Farben/Akzentfarben.pdf, ausgelesen 2026-08-19.",
+      "hellblau": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0,
+            0.6745,
+            0.7569
+          ],
+          "alpha": 1,
+          "hex": "#00ACC1"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              75,
+              0,
+              20,
+              5
+            ]
+          }
+        }
+      },
+      "dunkelblau-akzent": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0,
+            0.3961,
+            0.6275
+          ],
+          "alpha": 1,
+          "hex": "#0065A0"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              100,
+              35,
+              0,
+              25
+            ]
+          }
+        }
+      },
+      "violett": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4353,
+            0.4118,
+            0.6392
+          ],
+          "alpha": 1,
+          "hex": "#6F69A3"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              65,
+              62,
+              5,
+              0
+            ]
+          }
+        }
+      },
+      "lila": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.651,
+            0.4275,
+            0.6549
+          ],
+          "alpha": 1,
+          "hex": "#A66DA7"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              40,
+              65,
+              0,
+              100
+            ],
+            "hinweis": "CMYK laut PDF 40|65|0|100 — K=100 widerspricht dem RGB/Hex-Wert (vermutlich Tippfehler im Handbuch, plausibel K=0). Vor Druck bei cd@roteskreuz.at klären."
+          }
+        }
+      },
+      "orange": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.949,
+            0.5804,
+            0.0
+          ],
+          "alpha": 1,
+          "hex": "#F29400"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              0,
+              50,
+              100,
+              0
+            ]
+          }
+        }
+      },
+      "gelb": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9216,
+            0.7412,
+            0.0
+          ],
+          "alpha": 1,
+          "hex": "#EBBD00"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              0,
+              20,
+              100,
+              10
+            ]
+          }
+        }
+      },
+      "hellgruen": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6039,
+            0.7216,
+            0.4157
+          ],
+          "alpha": 1,
+          "hex": "#9AB86A"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              40,
+              0,
+              65,
+              15
+            ]
+          }
+        }
+      },
+      "helltuerkis": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5255,
+            0.7686,
+            0.7176
+          ],
+          "alpha": 1,
+          "hex": "#86C4B7"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              50,
+              0,
+              30,
+              5
+            ]
+          }
+        }
+      },
+      "dunkeltuerkis": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.051,
+            0.5882,
+            0.5569
+          ],
+          "alpha": 1,
+          "hex": "#0D968E"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              75,
+              0,
+              40,
+              20
+            ]
+          }
+        }
+      },
+      "dunkelgruen": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1725,
+            0.5686,
+            0.3333
+          ],
+          "alpha": 1,
+          "hex": "#2C9155"
+        },
+        "$extensions": {
+          "at.roteskreuz.cd": {
+            "cmyk": [
+              75,
+              0,
+              75,
+              20
+            ]
+          }
+        }
       }
     }
   }

@@ -11,8 +11,10 @@ Sollwerte kommen immer aus `data/tokens/` — nie aus einer anderen Datei ableit
 OOXML-Dateien sind ZIP-Archive. Entpacken und prüfen:
 
 1. **Farbschema** (`ppt/theme/theme1.xml` bzw. `word/theme/theme1.xml`):
-   `<a:accent1>` muss `B70E0C` führen. Sollwerte der ganzen Palette:
-   `assets/dist/theme1.xml` (aus den Tokens gebaut) direkt vergleichen.
+   Rollenzuordnung des ÖRK-Themes: `<a:dk2>` muss `B70E0C` führen (Arbeitsrot),
+   `<a:lt2>` = `838383` (Grau), `accent1`–`accent6` = Rotreihe dunkel→hell
+   (`5C0805`, `8A0A0A`, `C43D3D`, `D46E6E`, `E39E9E`, `F4DCDB`), `hlink`/`folHlink` = `B70E0C`.
+   Sollwerte der ganzen Palette: `assets/dist/theme1.xml` (aus den Tokens gebaut) direkt vergleichen.
 2. **Schriftschema** (`<a:majorFont>`/`<a:minorFont>` im Theme): muss `Dunant`
    führen, nicht Calibri/Cambria/Aptos.
 3. **Hart codierte Farben** in Slides/Dokumenttext: nach bekannten Fehlwerten
@@ -29,14 +31,14 @@ grep -o '<a:srgbClr val="[0-9A-Fa-f]*"' -r entpackt/ | sort | uniq -c | sort -rn
 | Fehlwert | Richtig | Typischer Fundort |
 |---|---|---|
 | `808080` (Office-Grau) | `838383` | überall — 16-mal häufiger als der richtige Wert |
-| `B70F0B`, `B70E0B` | `B70E0C` | POTX-Theme accent1, hart codierte Hintergründe |
+| `B70F0B`, `B70E0B` | `B70E0C` | POTX-Theme `dk2`/`hlink`/`folHlink`, hart codierte Hintergründe |
 | `D46D6E` | `D46E6E` | Rotabstufung im Theme |
 | `C33C3C` | `C43D3D` | Rotabstufung im Theme |
 | `89090A` | `8A0A0A` | Rotabstufung im Theme |
 | `5B0804` | `5C0805` | Rotabstufung im Theme |
 | Calibri/Cambria/Aptos im Schriftschema | Dunant | 57 von 65 geprüften Office-Dateien |
 | Microsoft-Standardtheme 2007/2016 | ÖRK-Theme | 12 JRK-DOTX + 3 Namensschild-Vorlagen |
-| Schriftschnitt „Dunant School" | ungeklärt | 47 von 49 JRK-InDesign-Vorlagen |
+| Schriftschnitt „Dunant School" | ungeklärt | 47 JRK-InDesign-Vorlagen (sämtliche) |
 
 Toleranzregel der Farbkollisionsprüfung: Farben, die sich je Kanal um ≤ 4/255 vom
 Sollwert unterscheiden, sind fast immer Tippfehler-Varianten des Sollwerts — melden.

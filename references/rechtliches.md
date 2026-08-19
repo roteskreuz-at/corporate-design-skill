@@ -152,7 +152,7 @@ Beispiel: Legt eine Fahrzeugregel (L2) eine Emblemdarstellung nahe, die rules/em
 
 ### Kennzeichnungspflicht für KI-generierte Inhalte
 
-Pflicht: KI-generierte Inhalte müssen gekennzeichnet werden (ÖRK-KI-Richtlinien). Konsequenz für Generatoren: Jedes Bild, Video oder Textstück, das ein Automat aus dieser Quelle erzeugt und das nach außen geht, ist als KI-generiert zu kennzeichnen — der Generator muss den Hinweis mitliefern, nicht der Nutzer nachträglich.
+Pflicht laut KI-Richtlinie (Weisung, s. Abschnitt 1): Inhalte, die den Anschein von Realität erwecken, und veröffentlichte Inhalte ungeprüfter Korrektheit sind als „KI generierter Inhalt“ zu kennzeichnen; im Arbeitsprozess sollen KI-Inhalte generell gekennzeichnet bleiben, bis ihre Korrektheit bestätigt ist. Arbeitsteilung in diesem Skill: Der Assistent liefert den Kennzeichnungshinweis zu jedem Deliverable aktiv mit; ob und wie der Vermerk im Dokument selbst platziert wird, entscheidet der verantwortliche Mensch — die Kennzeichnungspflicht nach der Weisung bleibt dabei bestehen (aus data/rules/ki-nutzung.json stammt die schärfere Formulierung, der Generator müsse den Hinweis direkt einbetten; dieser Datensatz ist nicht fachlich freigegeben).
 
 ### Harte Verbote
 

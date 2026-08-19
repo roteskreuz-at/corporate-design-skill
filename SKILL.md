@@ -24,9 +24,11 @@ freigegeben — bei Erstnutzung in einer Session einmal darauf hinweisen.
    oder Portal-Download). Das Rotkreuzzeichen ist völkerrechtlich geschützt; Missbrauch
    ist in Österreich strafbar (bis 15.000 €). Details: `references/emblemrecht.md` —
    bei jeder Frage, wer ein rotes Kreuz verwenden darf, zuerst diese Datei lesen.
-2. **KI-Kennzeichnung:** Das ÖRK verlangt die Kennzeichnung KI-generierter Inhalte.
-   Nach jedem erzeugten Deliverable daran erinnern (nicht ungefragt ins Dokument
-   stempeln — das entscheidet der Mensch).
+2. **KI-Kennzeichnung:** Die ÖRK-KI-Richtlinie (Weisung) verlangt die Kennzeichnung
+   von Inhalten mit Anschein von Realität sowie ungeprüft veröffentlichter Inhalte.
+   Nach jedem erzeugten Deliverable den Kennzeichnungshinweis aktiv mitliefern;
+   ob und wie der Vermerk ins Dokument kommt, entscheidet der Mensch — die Pflicht
+   nach der Weisung bleibt bestehen (Details: `references/rechtliches.md`).
 3. Erzeugte Materialien sind **Entwürfe**: Freigabe durch die zuständige Stelle
    (cd@roteskreuz.at bzw. Landesverband) liegt beim Menschen.
 
@@ -49,7 +51,9 @@ s. `references/print.md`).
 - **Auskunft:** Passende Referenz(en) aus der Tabelle unten lesen, Antwort mit exakten
   Werten geben. Bei unklarer oder fehlender Quellenlage das sagen — nie plausibel
   raten. Bei Widersprüchen gilt die Präzedenz `L0-recht > L1-marke > L2-anwendung >
-  L3-vorlage > L4-subbrand` (Details: `data/manifest.json`).
+  L3-vorlage > L4-subbrand` (Details: `data/manifest.json`). Die Präzedenz greift
+  nur bei echtem Widerspruch — für JRK-Material gelten zuerst die spezifischen
+  JRK-Regeln (Logo, Farben), die Basis-Ebenen füllen nur die Lücken.
 - **Erzeugen:** `farben.md`, `typografie.md`, `logo.md` immer lesen, dazu die
   kanalspezifische Referenz (digital/print/…). Logos aus `assets/logos/`,
   Office-Theme und Paletten aus `assets/dist/`.
@@ -80,7 +84,7 @@ s. `references/print.md`).
 
 - `assets/logos/basislogo/` — ÖRK-Basislogo deutsch: RGB-PNG, CMYK/Pantone/SW-EPS
 - `assets/logos/sonderlogo/` — Sonderlogo deutsch (RGB-JPG, CMYK-EPS)
-- `assets/logos/jrk/` — ÖJRK-Bundeslogo mit Slogan (RGB-JPG, CMYK-EPS)
+- `assets/logos/jrk/` — ÖJRK-Logo überregional, mit Slogan (RGB-JPG, CMYK-EPS)
 - `assets/dist/theme1.xml` — korrektes Office-Theme (aus den Tokens gebaut)
 - `assets/dist/OERK-Farben.ase` — Adobe-Farbfeldbibliothek
 - `assets/dist/oerk-farben.css`, `oerk-farben-flach.json` — Web-/Flachwerte

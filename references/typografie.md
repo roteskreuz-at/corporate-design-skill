@@ -33,7 +33,7 @@ Die Ersatzschriften sind vorinstallierte Systemschriften und damit frei nutzbar.
 
 - **Arial** (Windows) bzw. **Helvetica** (Mac) — ausschließlich, wenn die Dunant aus technischen Gründen nicht verwendbar ist (Schrift nicht installierbar), NICHT als gestalterische Alternative.
 - Verwendete Schnitte analog zur Dunant: **Arial Bold** und **Arial Regular**.
-- Ersatz für Dunant Light ist **Arial Regular**.
+- Ersatz für Dunant Light ist **Arial Regular**. (Für macOS ist der Light-Ersatz nicht dokumentiert — bis zur Klärung Helvetica Regular verwenden.)
 - Font-Stacks (Token): Hausschrift `Dunant, Arial, Helvetica, sans-serif`; Ersatz `Arial, Helvetica, sans-serif`.
 
 VERBOTEN: Verdana als Ersatzschrift. Diese Angabe stammte aus einer Fehlableitung aus einer Word-Vorlage (dokumentierte Korrektur vom 2026-08-04 in typography.tokens.json); der offizielle Styleguide nennt nur Arial bzw. Helvetica.

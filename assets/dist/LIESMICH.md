@@ -1,6 +1,6 @@
 # ÖRK CD – erzeugte Ausgaben
 
-Alle Dateien hier sind **automatisch erzeugt** aus `../tokens/`.
+Alle Dateien hier sind **automatisch erzeugt** aus `data/tokens/` (Repo-Wurzel).
 Nichts von Hand bearbeiten – Änderungen gehören in die Tokens, danach `python tools/build.py`.
 
 | Datei | Zweck |
