@@ -1,0 +1,209 @@
+{
+  "$schema": "schema/manifest.schema.json",
+  "manifest_version": "2.0.0",
+  "name": "oerk-corporate-design",
+  "titel": "Österreichisches Rotes Kreuz – Corporate Design als maschinenlesbare Quelle",
+  "beschreibung": "Einzige verbindliche Quelle für Gestaltungs- und Zeichenregeln des ÖRK. Ein Datenbestand, zwei Auslieferungen: öffentlich über design.roteskreuz.at, intern über das Rollen-Repository.",
+  "sprache": "de",
+  "herausgeber": "Österreichisches Rotes Kreuz, Generalsekretariat",
+  "kanonische_url": "https://design.roteskreuz.at/cd/v1/manifest.json",
+  "stand": "2026-08-04",
+  "lizenz": {
+    "id": "OERK-CD-1.0",
+    "text": "Die Inhalte dürfen zur Herstellung CD-konformer ÖRK-Materialien gelesen und verarbeitet werden. Das Rotkreuzzeichen selbst ist davon ausgenommen: seine Verwendung richtet sich ausschließlich nach dem Rotkreuzgesetz und bedarf einer ausdrücklichen Ermächtigung des ÖRK.",
+    "url": "https://design.roteskreuz.at/cd/v1/lizenz"
+  },
+  "praezedenz": {
+    "beschreibung": "Bei Widersprüchen gewinnt die niedrigere Ebene. Diese Regel ist Teil des Vertrags mit maschinellen Konsumenten.",
+    "reihenfolge": [
+      "L0-recht",
+      "L1-marke",
+      "L2-anwendung",
+      "L3-vorlage",
+      "L4-subbrand"
+    ]
+  },
+  "statusmodell": {
+    "hinweis": "Zwei getrennte Achsen. Sie werden bewusst NICHT zu einem Feld zusammengefasst – eine Regel kann gesetzlich zwingend und zugleich schlecht dokumentiert sein.",
+    "verbindlichkeit": {
+      "gesetz": "Verstoß hat Rechtsfolgen. Ohne Ausnahme anwenden.",
+      "cd-verbindlich": "Per Beschluss festgelegt. Abweichung nur bewusst und kenntlich.",
+      "empfehlung": "Fachlich begründete Best Practice.",
+      "konvention": "Gelebte Praxis, nie formal beschlossen."
+    },
+    "quellenlage": {
+      "offiziell-vollstaendig": "Aus einem vollständigen offiziellen Dokument.",
+      "offiziell-teilweise": "Offizielle Quelle, deckt den Bereich aber nicht vollständig ab.",
+      "abgeleitet": "Aus einem Artefakt rückgerechnet (z.B. aus einer Vorlagendatei) – kein beschlossenes Regelwerk dahinter.",
+      "unbelegt": "Es existiert nachweislich keine Quelle.",
+      "nicht-erhoben": "Eine Quelle existiert möglicherweise, wurde aber nicht abgerufen. NICHT mit 'unbelegt' verwechseln."
+    }
+  },
+  "einstieg_fuer_maschinen": [
+    "1. rules/ki-nutzung.json lesen. Dort steht, wie mit Unsicherheit und Widersprüchen umzugehen ist.",
+    "2. rules/emblem-recht.json lesen. Diese Regeln gehen allem anderen vor.",
+    "3. registry/bereiche.json als Landkarte verwenden, um zu prüfen, ob zur Frage überhaupt eine Quelle existiert.",
+    "4. Erst dann den fachlich passenden Datensatz laden.",
+    "5. Bei jeder Aussage verbindlichkeit, quellenlage und human_verified mitführen und auf Nachfrage offenlegen.",
+    "Für einen schnellen Überblick ohne JSON-Parsing: llms.txt."
+  ],
+  "eintraege": [
+    {
+      "id": "ki-nutzung",
+      "datei": "rules/ki-nutzung.json",
+      "ebene": "L0-recht",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-teilweise",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Regeln für maschinelle Konsumenten",
+      "zuerst_lesen": true
+    },
+    {
+      "id": "emblem-recht",
+      "datei": "rules/emblem-recht.json",
+      "ebene": "L0-recht",
+      "verbindlichkeit": "gesetz",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Rotkreuzzeichen – Schutzzeichen und Kennzeichen",
+      "zuerst_lesen": true
+    },
+    {
+      "id": "bereiche",
+      "datei": "registry/bereiche.json",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "konvention",
+      "quellenlage": "offiziell-teilweise",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Bereichsregister – Landkarte des gesamten CD"
+    },
+    {
+      "id": "tokens-farbe",
+      "datei": "tokens/color.tokens.json",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Farb-Token (DTCG)",
+      "format": "w3c-design-tokens-2025.10",
+      "warnung": "Primärrot geklärt: Logorot #FF0000 (Pantone 485 C) nur für das Wahrzeichen, Dunkelrot #B70E0C (Pantone 1805 C) als Arbeitston."
+    },
+    {
+      "id": "tokens-typografie",
+      "datei": "tokens/typography.tokens.json",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Typografie-Token (DTCG)",
+      "format": "w3c-design-tokens-2025.10"
+    },
+    {
+      "id": "fahrzeuge",
+      "datei": "domains/fahrzeuge.json",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Fahrzeug-Design 17"
+    },
+    {
+      "id": "logo",
+      "datei": "rules/logo.json",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Logo – Schutzzone, Mindestgrößen, Varianten"
+    },
+    {
+      "id": "video",
+      "datei": "domains/video.json",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "empfehlung",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Video und Bewegtbild"
+    },
+    {
+      "id": "audio",
+      "datei": "domains/audio.json",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Audio-CI"
+    },
+    {
+      "id": "jugendrotkreuz",
+      "datei": "domains/jugendrotkreuz.json",
+      "ebene": "L4-subbrand",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "oeffentlich",
+      "titel": "Österreichisches Jugendrotkreuz"
+    },
+    {
+      "id": "vorlagen-befund",
+      "datei": "registry/vorlagen-befund.json",
+      "ebene": "L3-vorlage",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "sichtbarkeit": "intern",
+      "titel": "Prüfbefund der Vorlagendateien",
+      "warnung": "Mängelbericht – nicht öffentlich ausliefern."
+    }
+  ],
+  "nicht_migriert": {
+    "hinweis": "Referenzimplementierung, keine vollständige Migration.",
+    "offen": [
+      "domains/office-vorlagen.json",
+      "domains/print.json",
+      "domains/digital.json",
+      "rules/gestaltungsraster.json",
+      "registry/assets.json"
+    ]
+  },
+  "auslieferung": {
+    "oeffentlich": {
+      "basis_url": "https://design.roteskreuz.at/cd/v1/",
+      "enthaelt": "alle Datensätze mit sichtbarkeit = oeffentlich",
+      "zusaetzlich": [
+        "/llms.txt",
+        "je Portalseite eine .md-Fassung"
+      ],
+      "vorbild": "brand.ifrc.org liefert bereits llms.txt und .md je Seite aus – dasselbe Muster, eine Ebene tiefer."
+    },
+    "intern": {
+      "kanal": "Rollen-Repository und MCP-Server für ÖRK-eigene Assistenzsysteme",
+      "enthaelt": "zusätzlich sichtbarkeit = intern und vertraulich"
+    },
+    "voraussetzung": "robots.txt von design.roteskreuz.at muss den Pfad /cd/v1/ und /llms.txt freigeben. Solange sie das Abrufen blockt, ist das Ziel 'maschinenlesbar' technisch nicht erreichbar."
+  },
+  "kontakte": {
+    "gestaltung": "cd@roteskreuz.at",
+    "recht_und_emblem": "recht@roteskreuz.at"
+  },
+  "qualitaetssicherung": {
+    "werkzeug": "tools/validate.py",
+    "prueft": [
+      "Alle Datensätze gegen ihr Schema",
+      "Alle im Manifest gelisteten Dateien existieren, alle vorhandenen Dateien sind gelistet",
+      "Kein Datensatz mit sichtbarkeit != oeffentlich ist im öffentlichen Build",
+      "Alle Token-Referenzen ({...}) lassen sich auflösen",
+      "Kein Farbwert ist mehrfach mit abweichendem Wert definiert",
+      "Fällige Reviews (geprueft_am + review_intervall_monate < heute)",
+      "Datensätze mit human_verified = false"
+    ],
+    "ausfuehrung": "bei jedem Commit, Build bricht bei Fehlern ab"
+  },
+  "quelle_der_wahrheit": {
+    "url": "https://design.roteskreuz.at/",
+    "regel": "design.roteskreuz.at ist die maßgebliche Quelle des ÖRK-CD. Dieses Paket ist eine strukturierte Abbildung davon, kein Ersatz. Bei jedem Widerspruch gilt das Portal. Jeder Datensatz führt seine Portalseite im Pflichtfeld quelle_kanonisch, und jede maschinelle Auskunft muss diese URL mitliefern.",
+    "umfang_portal": {
+      "seiten": 61,
+      "dateien": 294,
+      "stand": "2026-08-04"
+    }
+  }
+}

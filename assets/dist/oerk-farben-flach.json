@@ -1,0 +1,162 @@
+{
+ "logorot": {
+  "hex": "#FF0000",
+  "cmyk": [
+   0,
+   100,
+   100,
+   0
+  ],
+  "pantone": "485 C"
+ },
+ "dunkelrot": {
+  "hex": "#B70E0C",
+  "cmyk": [
+   0,
+   100,
+   100,
+   25
+  ],
+  "pantone": "1805 C"
+ },
+ "schwarz": {
+  "hex": "#000000",
+  "cmyk": [
+   0,
+   0,
+   0,
+   100
+  ],
+  "pantone": "Black 6 C / Black C"
+ },
+ "weiss": {
+  "hex": "#FFFFFF",
+  "cmyk": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "pantone": null
+ },
+ "grau": {
+  "hex": "#838383",
+  "cmyk": [
+   0,
+   0,
+   0,
+   50
+  ],
+  "pantone": "430 C"
+ },
+ "dunkelblau": {
+  "hex": "#002D55",
+  "cmyk": [
+   100,
+   45,
+   0,
+   65
+  ],
+  "pantone": null
+ },
+ "rot-05": {
+  "hex": "#F4DCDB",
+  "cmyk": [
+   5,
+   20,
+   10,
+   0
+  ],
+  "pantone": null
+ },
+ "rot-20": {
+  "hex": "#E39E9E",
+  "cmyk": [
+   10,
+   45,
+   30,
+   0
+  ],
+  "pantone": null
+ },
+ "rot-40": {
+  "hex": "#D46E6E",
+  "cmyk": [
+   15,
+   65,
+   45,
+   5
+  ],
+  "pantone": null
+ },
+ "rot-60": {
+  "hex": "#C43D3D",
+  "cmyk": [
+   15,
+   85,
+   75,
+   5
+  ],
+  "pantone": null
+ },
+ "rot-80": {
+  "hex": "#8A0A0A",
+  "cmyk": [
+   30,
+   100,
+   100,
+   35
+  ],
+  "pantone": null
+ },
+ "rot-95": {
+  "hex": "#5C0805",
+  "cmyk": [
+   35,
+   100,
+   90,
+   60
+  ],
+  "pantone": null
+ },
+ "blau-hell": {
+  "hex": "#B4D8EB",
+  "cmyk": [
+   35,
+   5,
+   5,
+   0
+  ],
+  "pantone": null
+ },
+ "blau-mittel": {
+  "hex": "#0065A0",
+  "cmyk": [
+   90,
+   55,
+   10,
+   0
+  ],
+  "pantone": null
+ },
+ "grau-hell": {
+  "hex": "#C6C6C6",
+  "cmyk": [
+   25,
+   20,
+   20,
+   0
+  ],
+  "pantone": null
+ },
+ "grau-flaeche": {
+  "hex": "#F6F6F6",
+  "cmyk": [
+   5,
+   5,
+   5,
+   0
+  ],
+  "pantone": null
+ }
+}

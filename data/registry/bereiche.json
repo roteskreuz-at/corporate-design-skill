@@ -1,0 +1,339 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "bereiche",
+  "titel": "Bereichsregister – vollständige Landkarte des ÖRK-CD",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/",
+  "ebene": "L1-marke",
+  "verbindlichkeit": "konvention",
+  "quellenlage": "offiziell-teilweise",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 3,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "design.roteskreuz.at – Hauptnavigation des ÖRK-Styleguide",
+        "fundstelle": "https://design.roteskreuz.at/",
+        "abgerufen_am": "2026-08-04"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "hinweis": "Die Bereichsliste ist aus der tatsächlichen Navigation des Styleguide-Portals abgeleitet, nicht aus einem Suchmaschinenindex. Sie enthält daher zwei komplette Hauptbereiche (Audio, Jugendrotkreuz), die im bisherigen Lücken-Register fehlten. Für jeden Bereich ist getrennt vermerkt, wie verbindlich er ist und wie es um die Quellenlage steht.",
+  "bereiche": [
+    {
+      "id": "emblem-recht",
+      "gruppe": "Recht",
+      "titel": "Rotkreuzzeichen – Schutzzeichen und Kennzeichen",
+      "ebene": "L0-recht",
+      "verbindlichkeit": "gesetz",
+      "quellenlage": "offiziell-vollstaendig",
+      "datensatz": "rules/emblem-recht.json",
+      "anmerkung": "Steht NICHT auf dem Designportal, sondern im Rechtsbereich (Rotkreuzgesetz, vorschriften.roteskreuz.at). Im bisherigen Register fehlte dieser Bereich vollständig – obwohl er allen Gestaltungsregeln vorgeht."
+    },
+    {
+      "id": "logo",
+      "gruppe": "Grundelemente",
+      "titel": "Logo (Schutzzone, Mindestgröße, Varianten, No-Gos)",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Portalseite existiert (grundelemente/logo mit Unterseiten Analoge/Digitale Anwendungen) und nennt eine Schutzzone. Inhalt wurde bisher nur nicht abgerufen – NICHT 'keine Quelle vorhanden'."
+    },
+    {
+      "id": "farben",
+      "gruppe": "Grundelemente",
+      "titel": "Farben (Pantone/CMYK/RGB-Referenzblatt)",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "abgeleitet",
+      "datensatz": "tokens/color.tokens.json",
+      "anmerkung": "Primärrot ungeklärt, drei abweichende Fassungen. Höchste Priorität."
+    },
+    {
+      "id": "typografie",
+      "gruppe": "Grundelemente",
+      "titel": "Typografie (Hausschrift Dunant, Lizenz, Schnitte)",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "abgeleitet",
+      "datensatz": "tokens/typography.tokens.json"
+    },
+    {
+      "id": "markenkommunikation",
+      "gruppe": "Grundelemente",
+      "titel": "Markenkommunikation (Tonalität, Sprache, Claim)",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Im bisherigen Register nicht enthalten. Für Textgenerierung durch KI der wichtigste Bereich überhaupt."
+    },
+    {
+      "id": "bildwelt",
+      "gruppe": "Grundelemente",
+      "titel": "Bildwelt / Fotografie",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "rechtliches-medien",
+      "gruppe": "Grundelemente",
+      "titel": "Rechtliches: Bildrechte, Einwilligungen, Ethik, KI-Richtlinien, Barrierefreiheit",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-teilweise",
+      "datensatz": "rules/ki-nutzung.json",
+      "anmerkung": "Enthält die Kennzeichnungspflicht für KI-generierte Inhalte. Im bisherigen Register nicht enthalten."
+    },
+    {
+      "id": "social-media",
+      "gruppe": "Digital",
+      "titel": "Social Media (Formate, Generator, Profilbilder)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Portal enthält einen Social-Media-Generator – der ist faktisch bereits eine maschinelle CD-Anwendung."
+    },
+    {
+      "id": "gestaltungselemente-digital",
+      "gruppe": "Digital",
+      "titel": "Gestaltungselemente digital",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "video",
+      "gruppe": "Digital",
+      "titel": "Video / Bewegtbild",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "empfehlung",
+      "quellenlage": "offiziell-teilweise",
+      "datensatz": "domains/video.json",
+      "anmerkung": "Inhalt ist überwiegend Social-Media-Handwerkslehre, kein CD-Regelwerk. Deshalb 'empfehlung', nicht 'cd-verbindlich'."
+    },
+    {
+      "id": "online-banner",
+      "gruppe": "Digital",
+      "titel": "Online-Banner",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "landingpages",
+      "gruppe": "Digital",
+      "titel": "Landingpages",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "email",
+      "gruppe": "Digital",
+      "titel": "E-Mail (Signatur, Newsletter)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "online-konferenzen",
+      "gruppe": "Digital",
+      "titel": "Online-Konferenzen (Hintergründe, Namensschilder)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "empfehlung",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "vorlagen-digital",
+      "gruppe": "Digital",
+      "titel": "Digitale Vorlagen",
+      "ebene": "L3-vorlage",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "gestaltungsraster",
+      "gruppe": "Print",
+      "titel": "Gestaltungsraster",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "geschaeftsdrucksorten",
+      "gruppe": "Print",
+      "titel": "Geschäftsdrucksorten (Briefpapier, Visitenkarte, Kuvert)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "office-vorlagen",
+      "gruppe": "Print",
+      "titel": "Office-Vorlagen (Word, PowerPoint)",
+      "ebene": "L3-vorlage",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "abgeleitet",
+      "datensatz": "domains/office-vorlagen.json"
+    },
+    {
+      "id": "printprodukte",
+      "gruppe": "Print",
+      "titel": "Printprodukte (Projektinfo, Leporello, Einladung, Handzettel)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "uniform",
+      "gruppe": "Branding",
+      "titel": "Uniform / Bekleidung",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Abzugrenzen von Dienstbekleidungs- und Umsetzungsvorschrift – das sind Kleidervorschriften, keine Gestaltungsdokumente."
+    },
+    {
+      "id": "kfz",
+      "gruppe": "Branding",
+      "titel": "Fahrzeug-Design",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "offiziell-vollstaendig",
+      "datensatz": "domains/fahrzeuge.json",
+      "anmerkung": "Quelle vollständig, aber von 2018. Fahrzeugliste und Kontakte sind überholungsbedürftig."
+    },
+    {
+      "id": "gebaeude",
+      "gruppe": "Branding",
+      "titel": "Gebäude (innen/außen, Beschilderung)",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "werbemittel",
+      "gruppe": "Branding",
+      "titel": "Werbemittel / Give-aways",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "corporate-song",
+      "gruppe": "Audio",
+      "titel": "Corporate Song",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Hauptbereich Audio fehlte im bisherigen Register vollständig."
+    },
+    {
+      "id": "audio-logo",
+      "gruppe": "Audio",
+      "titel": "Audio-Logo / Sound-Branding",
+      "ebene": "L1-marke",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Direkt relevant für die im Video-Datensatz vermisste Intro-/Outro-Vorlage."
+    },
+    {
+      "id": "telefon-ansagen",
+      "gruppe": "Audio",
+      "titel": "Telefon-Ansagen",
+      "ebene": "L2-anwendung",
+      "verbindlichkeit": "konvention",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "jrk-basiselemente",
+      "gruppe": "Jugendrotkreuz",
+      "titel": "ÖJRK Basiselemente",
+      "ebene": "L4-subbrand",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null,
+      "anmerkung": "Eigene Submarke mit eigenem Regelwerk. Fehlte im bisherigen Register vollständig."
+    },
+    {
+      "id": "jrk-gestaltungsraster",
+      "gruppe": "Jugendrotkreuz",
+      "titel": "ÖJRK Gestaltungsraster",
+      "ebene": "L4-subbrand",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "jrk-print",
+      "gruppe": "Jugendrotkreuz",
+      "titel": "ÖJRK Print",
+      "ebene": "L4-subbrand",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    },
+    {
+      "id": "jrk-werbemittel",
+      "gruppe": "Jugendrotkreuz",
+      "titel": "ÖJRK Werbemittel",
+      "ebene": "L4-subbrand",
+      "verbindlichkeit": "cd-verbindlich",
+      "quellenlage": "nicht-erhoben",
+      "datensatz": null
+    }
+  ],
+  "kennzahlen": {
+    "hinweis": "Werden vom Validierungsskript berechnet, nicht von Hand gepflegt.",
+    "berechnet_von": "tools/validate.py"
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Diese Liste als Landkarte verwenden, um zu prüfen, ob zu einer Frage überhaupt eine Quelle existiert."
+    ],
+    "darf_nicht": [
+      "Einen Bereich mit quellenlage 'nicht-erhoben' als 'gibt es nicht' darstellen.",
+      "Aus dem Fehlen eines Datensatzes schließen, dass es keine Regel gibt – meistens gibt es sie, sie ist nur noch nicht erfasst."
+    ],
+    "bei_unsicherheit": "Auf design.roteskreuz.at und cd@roteskreuz.at verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Ist diese Bereichsliste vollständig, oder gibt es weitere nicht öffentlich verlinkte Unterseiten?",
+      "blockiert": "Die Aussage, dass das Register vollständig ist.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

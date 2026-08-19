@@ -1,0 +1,172 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "audio",
+  "titel": "Audio-CI – Corporate Song, Audio-Logo, Telefon-Ansagen",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/audio",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/audio/audio-logo",
+    "https://design.roteskreuz.at/audio/corporate-song",
+    "https://design.roteskreuz.at/audio/telefon-ansagen"
+  ],
+  "ebene": "L1-marke",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 24,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Audio (Übersicht)",
+        "fundstelle": "https://design.roteskreuz.at/audio",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Audio-Logo",
+        "fundstelle": "https://design.roteskreuz.at/audio/audio-logo",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Corporate Song",
+        "fundstelle": "https://design.roteskreuz.at/audio/corporate-song",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Telefon-Ansagen",
+        "fundstelle": "https://design.roteskreuz.at/audio/telefon-ansagen",
+        "abgerufen_am": "2026-08-04"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "grundlage": {
+    "entstehung": "2018 gemeinsam mit „gosh! Audiomarketing“ entwickelt.",
+    "nutzungsrecht": "Von allen Organisationseinheiten des ÖRK zeitlich unbegrenzt in allen Rotkreuz-Kommunikationskanälen einsetzbar.",
+    "leitgedanke": "Markenkern „Aus Liebe zum Menschen“. Ziel: Wiedererkennung, Differenzierung, Emotionalisierung."
+  },
+  "audio_logo": {
+    "beschreibung": "Angelehnt an den Klang der Herztöne und den „Biep“ eines EKG-Monitors.",
+    "regel_bindend": "Darf NUR in dieser Form verwendet werden – Abfolge der Elemente und Rhythmus sind unveränderlich.",
+    "einsatzbereiche": [
+      "Spots",
+      "Präsentationen",
+      "Videos",
+      "Podcasts",
+      "Social-Media-Beiträge"
+    ],
+    "formate": [
+      "MP3",
+      "WAVE 16 bit",
+      "WAVE 24 bit"
+    ],
+    "bezugsquelle": "https://design.roteskreuz.at/audio/audio-logo"
+  },
+  "corporate_song": {
+    "eingespielt_am": "2018-05-28",
+    "mit": "Florian Ragendorfer",
+    "premiere": "Bundesjugendlager 2018",
+    "klangelemente": [
+      "an den Herzschlag angelehnter Beat",
+      "sympathische Gesangsstimme für Nähe und Wärme",
+      "Klavier als Bogen zwischen Tradition und Innovation",
+      "Chor für Stärke durch Zusammengehörigkeit"
+    ],
+    "versionen": [
+      "Gesamtversion",
+      "Instrumentalversion",
+      "Karaokeversion",
+      "Reanimation-Remix"
+    ],
+    "formate": [
+      "MP3"
+    ],
+    "zusatzmaterial": [
+      "Noten (PDF)",
+      "Text (PDF)",
+      "Soundcloud-Stream",
+      "Musikvideo mit Making-of"
+    ],
+    "einsatzbereiche": [
+      "Feste",
+      "Sommerlager",
+      "Events",
+      "Videos",
+      "Hintergrundmusik vor Kursbeginn",
+      "Karaokeabend"
+    ],
+    "mitmachen": "Eigene musikalische Umsetzungen an cd@roteskreuz.at schicken."
+  },
+  "telefon_ansagen": {
+    "zweck": "Akustische Visitenkarte; erhöht Geduld und Verweildauer in der Warteschleife.",
+    "sprecher": {
+      "deutsch": "Michael Köppel (Ö1)",
+      "englisch": "Julie McCarthy (FM4)"
+    },
+    "mutationen": "Über 90 Fassungen für Landesverbände und Blutspendedienste. Welche Schleife im jeweiligen Bundesland läuft, ist beim Ansprechpartner im Landesverband zu erfragen.",
+    "elemente": [
+      {
+        "id": "text-vor-melden",
+        "de": "Herzlich willkommen beim Österreichischen Roten Kreuz. Wir sind da, um zu helfen. Wir bitten Sie um etwas Geduld und melden uns in Kürze.",
+        "en": "Thank you for calling the Austrian Red Cross. We are here to help. All our lines are busy at the moment. You will be connected as soon as possible."
+      },
+      {
+        "id": "warteschleife-music-on-hold",
+        "de": "Bleiben Sie bitte am Apparat. Ihr Anruf wird so rasch wie möglich weitergeleitet.",
+        "en": "The requested extension is busy at the moment, please hold the line."
+      },
+      {
+        "id": "warteschleife-online",
+        "zweck": "Warteschleife für Online-Meetings, Kurse oder Pressekonferenzen."
+      },
+      {
+        "id": "nachtschaltung-mit-anrufbeantworter",
+        "de": "Österreichisches Rotes Kreuz, herzlich willkommen. Unser Büro ist derzeit nicht besetzt. Bitte hinterlassen Sie eine Nachricht nach dem Signalton – wir rufen verlässlich zurück.",
+        "en": "Austrian Red Cross, thank you for calling. We are not available at the moment. Please leave a message after the tone. We will contact you as soon as possible."
+      },
+      {
+        "id": "nachtschaltung-ohne-anrufbeantworter",
+        "de": "Österreichisches Rotes Kreuz, herzlich willkommen. Unser Büro ist derzeit nicht besetzt. Im Notfall wählen Sie 144.",
+        "en": "Austrian Red Cross, thank you for calling. We are not available at the moment. If you have an emergeny, please call 144."
+      }
+    ],
+    "hinweis_qualitaetssicherung": "Im englischen Text der Nachtschaltung ohne Anrufbeantworter steht auf der Portalseite „emergeny“ statt „emergency“. Tippfehler in der Quelle – nicht übernehmen, sondern melden."
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Auf die vorhandenen Audio-Assets verweisen, wenn nach Sound-Branding, Intro/Outro oder Jingle gefragt wird.",
+      "Die Ansagetexte wörtlich zitieren."
+    ],
+    "darf_nicht": [
+      "Das Audio-Logo nachbauen, nachsynthetisieren oder in Rhythmus/Abfolge verändern.",
+      "Eigene Ansagetexte als offiziell ausgeben.",
+      "Den Corporate Song für Zwecke außerhalb der Rotkreuz-Kommunikation lizenzieren."
+    ],
+    "bei_unsicherheit": "An cd@roteskreuz.at verweisen; für die landesspezifische Telefonschleife an den Landesverband."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Gibt es eine Kurzfassung des Audio-Logos (Stinger) für Formate unter 3 Sekunden?",
+      "blockiert": "Einsatz in sehr kurzen Social-Media-Videos.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Wie ist der Corporate Song lizenzrechtlich gegenüber Plattformen wie TikTok oder Instagram gestellt (Content-ID, Musikbibliothek)?",
+      "blockiert": "Rechtssichere Verwendung in Social-Media-Videos.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

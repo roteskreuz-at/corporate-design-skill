@@ -1,0 +1,20 @@
+/* ÖRK Farbwerte – automatisch erzeugt aus tokens/color.tokens.json.
+   NICHT von Hand bearbeiten; Quelle der Wahrheit sind die Tokens. */
+:root {
+  --oerk-blau-hell: #B4D8EB;
+  --oerk-blau-mittel: #0065A0;
+  --oerk-dunkelblau: #002D55;
+  --oerk-dunkelrot: #B70E0C;
+  --oerk-grau: #838383;
+  --oerk-grau-flaeche: #F6F6F6;
+  --oerk-grau-hell: #C6C6C6;
+  --oerk-logorot: #FF0000;
+  --oerk-rot-05: #F4DCDB;
+  --oerk-rot-20: #E39E9E;
+  --oerk-rot-40: #D46E6E;
+  --oerk-rot-60: #C43D3D;
+  --oerk-rot-80: #8A0A0A;
+  --oerk-rot-95: #5C0805;
+  --oerk-schwarz: #000000;
+  --oerk-weiss: #FFFFFF;
+}

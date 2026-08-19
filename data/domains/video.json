@@ -1,0 +1,201 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "video",
+  "titel": "Video und Bewegtbild",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/digital/video",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/digital/vorlagen"
+  ],
+  "ebene": "L2-anwendung",
+  "verbindlichkeit": "empfehlung",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 12,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Digital → Video",
+        "fundstelle": "https://design.roteskreuz.at/digital/video",
+        "abgerufen_am": "2026-08-04"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "verbindlichkeitshinweis": "Der Inhalt ist überwiegend Social-Media-Handwerkslehre, kein Gestaltungsregelwerk. Deshalb 'empfehlung' und nicht 'cd-verbindlich'. Die verbindlichen Teile für Bewegtbild stehen anderswo: Logo (rules/logo.json), Farben und Schrift (tokens/), Bildwelt und KI-Kennzeichnung (rules/ki-nutzung.json), Sound-Branding (domains/audio.json).",
+  "einleitung": "Bewegtbild wird immer wichtiger – nicht nur aufwändig produzierte Imagevideos, sondern auch Handyvideos mit authentischen Einblicken. Gerade junge Menschen beziehen Informationen aus TikTok oder Instagram. Umso wichtiger ist, dass das Rote Kreuz in seinen offiziellen Kanälen klar als Absender erkennbar ist.",
+  "grundlagen": {
+    "zielgruppenfokus": [
+      "Definiere vorab, für wen das Video ist (z.B. Community, Fachpublikum).",
+      "Passe Tonality und Bildsprache an Plattform und Zielgruppe an."
+    ],
+    "konsistenz": [
+      "Wiederkehrende Formate (wöchentliche Tipps, Mini-Serien) steigern die Bindung.",
+      "Achte auf visuelle Konsistenz (Farben, Fonts, Filter) für Markenwiedererkennung."
+    ],
+    "storytelling": [
+      "Erzähle eine klare, kurze Geschichte: Problem > Lösung > Mehrwert.",
+      "Arbeite mit Emotionen (Humor, Spannung, Überraschung).",
+      "Nutze persönliche Einblicke und echte Momente – Authentizität schlägt Perfektion."
+    ]
+  },
+  "aufbau": {
+    "hook": {
+      "dauer": "erste 3 Sekunden",
+      "ziel": "Frage, Statement oder visueller Reiz, der zum Stoppen verleitet."
+    },
+    "hauptteil": "Kurze, klare Botschaft. Ein Gedanke oder Thema pro Video.",
+    "cta": {
+      "beispiele": [
+        "Folge für mehr Tipps",
+        "Kommentiere deine Meinung",
+        "Link in Bio"
+      ]
+    }
+  },
+  "kreative_gestaltung": [
+    "B-Roll (Schnittbilder) oder einfache Grafiken für Abwechslung nutzen.",
+    "Texteinblendungen, Emojis und Sticker einsetzen (besonders TikTok und Instagram).",
+    "Mit Musik und Soundeffekten experimentieren – Lizenzrechte immer beachten."
+  ],
+  "rechtliches_barrierefreiheit": [
+    "Musikrechte beachten: Plattform-Audiobibliotheken oder bezahlte Musikplattform nutzen.",
+    "Personen im Bild: Einverständnis einholen, falls nicht Team oder Influencer:in.",
+    "Barrierefreiheit: Untertitel, klare Sprache, gute Kontraste."
+  ],
+  "best_practices": [
+    "Untertitel: Viele schauen ohne Ton – Untertitel steigern Reichweite und Verständlichkeit.",
+    "Branding subtil einbauen: Logo, Farben, Intro/Outro, Uniformen, Einsatzauto. Werbefilm-Ästhetik durch zu viel Branding vermeiden.",
+    "Länge anpassen: So kurz wie möglich, so lang wie nötig (meist 15–45 Sekunden).",
+    "Testing: Varianten ausprobieren, Daten analysieren, Inhalte optimieren."
+  ],
+  "technische_basics": {
+    "aufloesung": "1080 x 1920 (9:16 Hochformat) oder höher (4K)",
+    "framerate": "30 fps Standard, 60 fps für dynamische Szenen",
+    "stabilitaet": "Ruhige Hand oder Stativ",
+    "licht": "Natürliches Licht bevorzugen, Gesicht zur Lichtquelle drehen",
+    "ton": "Externes Mikrofon oder ruhige Umgebung. Tonqualität ist genauso wichtig wie Bildqualität."
+  },
+  "plattformen": {
+    "tiktok": {
+      "stil": "Entertainment, schnelle Schnitte, Trendsounds",
+      "max_laenge_sek": 60,
+      "optimal_sek": [
+        10,
+        30
+      ]
+    },
+    "instagram": {
+      "bereiche": [
+        "Reels",
+        "Stories",
+        "Feed"
+      ],
+      "stil": "Unterhaltung und Ästhetik, visuell hochwertig; Stories dürfen spontaner sein"
+    },
+    "linkedin": {
+      "stil": "Professionell, Mehrwert-basiert, ruhigeres Tempo, klare Botschaft"
+    }
+  },
+  "vorlagen_und_assets": {
+    "hinweis": "WICHTIG: Diese Vorlagen existieren. Eine frühere Fassung dieses Datensatzes führte sie irrtümlich als fehlend.",
+    "verfuegbar": [
+      {
+        "typ": "Motion-Graphics-Vorlagen",
+        "bezugsquelle": "https://design.roteskreuz.at/digital/video"
+      },
+      {
+        "typ": "Untertitel-Vorlagen",
+        "bezugsquelle": "https://design.roteskreuz.at/digital/video"
+      },
+      {
+        "typ": "Animierte Banner – HTML-Dateien und Google-Web-Designer-Projektdateien",
+        "bezugsquelle": "https://design.roteskreuz.at/digital/video"
+      },
+      {
+        "typ": "Audio-Logo als Intro/Outro-Element",
+        "verweis": "domains/audio.json"
+      },
+      {
+        "typ": "Help-Videos",
+        "bezugsquelle": "YouTube-Playlist mit Tutorials zur Erstellung von Social-Media-Videos"
+      }
+    ]
+  },
+  "animierte_banner": {
+    "werkzeug": "Google Web Designer (GWD), alternativ Adobe XD",
+    "workflow": [
+      "1. Vorbereitung in Photoshop: Bannervorlage (PSD) wählen, grafische Elemente (Hintergrund, Logo, Text, CTA) separat als PNG/SVG mit transparentem Hintergrund exportieren.",
+      "2. Neues Projekt in GWD: Breite und Höhe aus der PSD-Vorlage übernehmen, HTML5- bzw. Display-&-Video-360-Format wählen.",
+      "3. Elemente importieren und wie in der Vorlage anordnen.",
+      "4. Animation: Eigenschaften (Position, Transparenz, Skalierung) je Layer wählen, In- und Outpunkte per Keyframes auf der Timeline setzen, Gesamtlänge anpassen (z.B. 10 Sekunden).",
+      "5. Loops und Interaktionen: Loop über „on end > go to frame 0“, Click-Tag über „on click > open URL“.",
+      "6. Export und Test: Datei > Veröffentlichen > Lokale Anzeige. Es entsteht ein ZIP mit index.html, images/-Ordner und manifest.json. Test in Chrome oder im Ad Validator.",
+      "7. Für Google Ads oder Display & Video 360 beim Anlegen das DV360-Format wählen, damit GWD alle Anforderungen (z.B. ClickTag) automatisch einfügt."
+    ]
+  },
+  "korrektur_frueherer_luecken": {
+    "hinweis": "Die Vorgängerfassung listete fünf angeblich fehlende Elemente. Nach Prüfung des Portals sind drei davon vorhanden.",
+    "bewertung": [
+      {
+        "behauptet_fehlend": "Offizielle Intro-/Outro-Vorlage (Bewegtlogo, Sound-Branding)",
+        "tatsaechlich": "vorhanden",
+        "wo": "Audio-Logo (domains/audio.json) und Motion-Graphics-Vorlagen auf der Video-Seite"
+      },
+      {
+        "behauptet_fehlend": "Vorgaben zu Untertitel-Schrift und -Farbe",
+        "tatsaechlich": "vorhanden",
+        "wo": "Untertitel-Vorlagen auf der Video-Seite"
+      },
+      {
+        "behauptet_fehlend": "Farbfilter-/LUT-Vorgaben",
+        "tatsaechlich": "vorhanden, aber als Verbot formuliert",
+        "wo": "Bildwelt: künstliche Filter und übermäßige Nachbearbeitung werden vermieden"
+      },
+      {
+        "behauptet_fehlend": "Logo-/Wasserzeichen-Platzierungsregeln im Bewegtbild",
+        "tatsaechlich": "offen",
+        "wo": "Logo-Schutzzone gilt allgemein, eine bewegtbildspezifische Regel fehlt"
+      },
+      {
+        "behauptet_fehlend": "Verweis auf die Social-Media-Policy",
+        "tatsaechlich": "offen",
+        "wo": "nicht auf der Video-Seite verlinkt"
+      }
+    ]
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Diese Empfehlungen als Best Practice wiedergeben, nicht als Vorschrift.",
+      "Auf die vorhandenen Motion-Graphics-, Untertitel- und Banner-Vorlagen verweisen."
+    ],
+    "darf_nicht": [
+      "Aus den Plattformempfehlungen verbindliche CD-Regeln machen.",
+      "Eigene Untertitel- oder Intro-Gestaltungen als CD-konform ausgeben, solange die offiziellen Vorlagen nicht geprüft wurden."
+    ],
+    "bei_unsicherheit": "An cd@roteskreuz.at oder die Marketingabteilung des Landesverbands verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Wo genau wird das Logo im Bewegtbild platziert (Position, Größe, Dauer der Einblendung)?",
+      "blockiert": "Automatisierte Video-Erstellung mit korrektem Branding.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Welche Schrift und Farbe geben die offiziellen Untertitel-Vorlagen vor? Die Vorlagen existieren, ihre Werte sind hier noch nicht erfasst.",
+      "blockiert": "Maschinelle Prüfung von Untertiteln auf CD-Konformität.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

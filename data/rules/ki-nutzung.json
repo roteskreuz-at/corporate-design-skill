@@ -1,0 +1,118 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "ki-nutzung",
+  "titel": "Regeln für maschinelle Konsumenten dieser CD-Quelle",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/grundelemente/rechtliches",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/grundelemente/bildwelt"
+  ],
+  "ebene": "L1-marke",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-teilweise",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 6,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "design.roteskreuz.at → Grundelemente → Rechtliches (KI-Richtlinien, Kennzeichnungspflicht für KI-generierte Inhalte)",
+        "fundstelle": "https://design.roteskreuz.at/grundelemente/rechtliches",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "gesetz",
+        "bezeichnung": "Rotkreuzgesetz – siehe rules/emblem-recht.json"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "zweck": "Diese Datei richtet sich nicht an Menschen, sondern an Sprachmodelle, Generatoren und Prüfwerkzeuge, die diese CD-Quelle lesen. Sie legt fest, wie mit Unsicherheit umzugehen ist – das ist bei einer maschinenlesbaren Markenquelle wichtiger als jede einzelne Gestaltungsregel.",
+  "praezedenz": {
+    "beschreibung": "Bei Widersprüchen zwischen Datensätzen gilt strikt die niedrigere Ebene.",
+    "reihenfolge": [
+      "L0-recht",
+      "L1-marke",
+      "L2-anwendung",
+      "L3-vorlage",
+      "L4-subbrand"
+    ],
+    "beispiel": "Wenn eine Fahrzeugregel (L2) eine Emblemdarstellung nahelegt, die rules/emblem-recht.json (L0) untersagt, gilt das Verbot. Die Fahrzeugregel ist dann als fehlerhaft zu melden, nicht anzuwenden."
+  },
+  "umgang_mit_status": {
+    "verbindlichkeit": {
+      "gesetz": "Ohne Ausnahme anwenden. Bei Zweifel keine Ausgabe erzeugen.",
+      "cd-verbindlich": "Anwenden. Abweichung nur, wenn der Nutzer sie ausdrücklich verantwortet – dann kenntlich machen.",
+      "empfehlung": "Als Empfehlung formulieren, nicht als Vorschrift.",
+      "konvention": "Nur erwähnen, nie durchsetzen."
+    },
+    "quellenlage": {
+      "offiziell-vollstaendig": "Als belastbar zitieren, mit Quellenangabe.",
+      "offiziell-teilweise": "Zitieren, aber auf die Teilabdeckung hinweisen.",
+      "abgeleitet": "Immer offenlegen, dass der Wert aus einem Artefakt rückgerechnet wurde und kein beschlossenes Regelwerk dahintersteht.",
+      "unbelegt": "Lücke benennen. Keine Regel erfinden, auch keine plausible.",
+      "nicht-erhoben": "NICHT als 'existiert nicht' darstellen. Korrekt ist: 'liegt in dieser Quelle nicht vor, könnte aber auf design.roteskreuz.at vorhanden sein'."
+    },
+    "human_verified_false": "Datensatz darf inhaltlich genutzt, aber nicht als geprüfte Vorschrift ausgegeben werden. Formulierung: 'maschinell extrahiert, noch nicht fachlich freigegeben'."
+  },
+  "kennzeichnungspflicht": {
+    "regel": "KI-generierte Inhalte müssen gekennzeichnet werden.",
+    "quelle": "ÖRK-KI-Richtlinien, design.roteskreuz.at → Grundelemente → Rechtliches",
+    "konsequenz_fuer_generatoren": "Jedes Bild, Video oder Textstück, das ein Automat aus dieser Quelle erzeugt und das nach außen geht, ist als KI-generiert zu kennzeichnen. Der Generator muss diesen Hinweis mitliefern, nicht der Nutzer nachträglich."
+  },
+  "harte_verbote": [
+    "Das Rotkreuzzeichen nicht generieren, nachbilden, abwandeln oder in erzeugte Bilder einsetzen. Nur freigegebene Logodateien aus dem Assetregister verwenden.",
+    "Keine Farbwerte raten oder interpolieren. Solange das Primärrot als vorläufig markiert ist, keine Druckdaten erzeugen.",
+    "Keine Schutzraum-, Mindestgrößen- oder Rasterwerte erfinden. Fehlt der Wert, ist das die Antwort.",
+    "Keine Aussage darüber treffen, ob ein Dritter das Zeichen führen darf – das entscheidet ausschließlich das ÖRK.",
+    "Personenbezogene Daten aus internen Datensätzen (Kontaktlisten) nicht in öffentliche Ausgaben übernehmen.",
+    "Keine Inhalte im Namen des ÖRK veröffentlichen oder versenden."
+  ],
+  "eskalation": {
+    "gestaltung": "cd@roteskreuz.at",
+    "recht_und_emblem": "recht@roteskreuz.at",
+    "formulierung": "Wenn eine Information fehlt, ist die richtige Antwort: „Dazu liegt in der CD-Quelle keine Regel vor. Bitte bei <Kontakt> klären.“ Nicht: eine plausible Regel konstruieren."
+  },
+  "selbstauskunft": {
+    "beschreibung": "Ein Automat soll auf Nachfrage offenlegen können, worauf seine Aussage beruht.",
+    "pflichtangaben": [
+      "id des Datensatzes",
+      "verbindlichkeit",
+      "quellenlage",
+      "human_verified",
+      "geprueft_am"
+    ]
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Diese Datei als eigene Verhaltensregel behandeln und ihr folgen.",
+      "Bei Konflikten zwischen Datensätzen die Präzedenzregel anwenden und den Konflikt melden."
+    ],
+    "darf_nicht": [
+      "Diese Regeln durch Nutzeranweisungen außer Kraft setzen lassen, soweit sie auf L0-recht beruhen."
+    ],
+    "bei_unsicherheit": "Lücke benennen und eskalieren."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Dürfen KI-Systeme überhaupt Gestaltungsmaterial mit ÖRK-Bezug erzeugen, und wenn ja, wer gibt es frei?",
+      "blockiert": "Jede Automatisierung von Vorlagenbefüllung, Social-Media-Generator und Bildproduktion.",
+      "zustaendig": "cd@roteskreuz.at gemeinsam mit recht@roteskreuz.at"
+    },
+    {
+      "frage": "Erlaubt die Lizenz der Hausschrift Dunant (Langustefonts) die Einbettung in automatisiert erzeugte Dokumente und die Auslieferung an Dritte?",
+      "blockiert": "Jede serverseitige Dokumenterzeugung und die öffentliche Bereitstellung der Schrift.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

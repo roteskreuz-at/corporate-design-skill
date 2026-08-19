@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://design.roteskreuz.at/cd/v1/schema/record.schema.json",
+  "title": "ÖRK CD – Gemeinsamer Kopf jedes Datensatzes",
+  "description": "Jede Datei unter rules/, domains/, registry/ und tokens/ trägt diesen Kopf. Er beantwortet vier Fragen getrennt voneinander: Wie verbindlich ist das? Wie gut ist es belegt? Wer darf es sehen? Wer verantwortet es?",
+  "type": "object",
+  "required": ["id", "titel", "quelle_kanonisch", "ebene", "verbindlichkeit", "quellenlage", "sichtbarkeit", "governance", "provenance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stabiler Bezeichner. Wird nie geändert, auch wenn sich der Titel ändert."
+    },
+    "titel": { "type": "string" },
+    "sprache": { "type": "string", "default": "de" },
+
+    "quelle_kanonisch": {
+      "type": "string",
+      "pattern": "^https://design\\.roteskreuz\\.at/",
+      "description": "Die maßgebliche Portalseite zu diesem Datensatz. design.roteskreuz.at ist die Quelle der Wahrheit für das ÖRK-CD – dieser Datensatz ist immer nur eine strukturierte Abbildung davon. Jede maschinelle Auskunft MUSS diese URL mitliefern, damit Nutzer am Original nachlesen können. Bei Widerspruch zwischen Portal und Datensatz gilt das Portal.",
+      "examples": ["https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen"]
+    },
+
+    "quellen_weitere": {
+      "type": "array",
+      "description": "Weitere maßgebliche Portalseiten, wenn ein Datensatz mehrere Seiten zusammenfasst.",
+      "items": { "type": "string", "pattern": "^https://" }
+    },
+
+    "ebene": {
+      "type": "string",
+      "enum": ["L0-recht", "L1-marke", "L2-anwendung", "L3-vorlage", "L4-subbrand"],
+      "description": "Schicht im Präzedenzmodell. Bei Widerspruch gewinnt immer die niedrigere Zahl: L0 schlägt L1 schlägt L2 usw."
+    },
+
+    "verbindlichkeit": {
+      "type": "string",
+      "enum": ["gesetz", "cd-verbindlich", "empfehlung", "konvention"],
+      "description": "WIE BINDEND ist die Regel? Unabhängig davon, wie gut sie dokumentiert ist. 'gesetz' = Verstoß hat Rechtsfolgen. 'cd-verbindlich' = per Beschluss festgelegt. 'empfehlung' = Best Practice. 'konvention' = gelebte Praxis, nie formal beschlossen."
+    },
+
+    "quellenlage": {
+      "type": "string",
+      "enum": [
+        "offiziell-vollstaendig",
+        "offiziell-teilweise",
+        "abgeleitet",
+        "unbelegt",
+        "nicht-erhoben"
+      ],
+      "description": "WIE GUT BELEGT ist die Regel? 'abgeleitet' = aus einem Artefakt rückgerechnet (z.B. aus einer Vorlagendatei), nicht aus einem Regelwerk. 'unbelegt' = es existiert nachweislich keine Quelle. 'nicht-erhoben' = es existiert möglicherweise eine Quelle, wir haben sie nur nicht abgerufen. Diese beiden NIE vermischen."
+    },
+
+    "sichtbarkeit": {
+      "type": "string",
+      "enum": ["oeffentlich", "intern", "vertraulich"],
+      "description": "Steuert den Build: nur 'oeffentlich' wird nach design.roteskreuz.at ausgeliefert. Personenbezogene Daten sind mindestens 'intern'."
+    },
+
+    "governance": {
+      "type": "object",
+      "required": ["owner", "review_intervall_monate"],
+      "properties": {
+        "owner": {
+          "type": "string",
+          "format": "email",
+          "description": "Rollenpostfach, KEINE Einzelperson. Personen wechseln, Postfächer nicht."
+        },
+        "review_intervall_monate": { "type": "integer", "minimum": 1, "maximum": 60 },
+        "geprueft_am": { "type": ["string", "null"], "format": "date" },
+        "geprueft_von": { "type": ["string", "null"] },
+        "naechste_pruefung": { "type": ["string", "null"], "format": "date" }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "required": ["methode", "erstellt_am", "human_verified"],
+      "properties": {
+        "quellen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["typ", "bezeichnung"],
+            "properties": {
+              "typ": { "type": "string", "enum": ["gesetz", "pdf", "webseite", "vorlage", "beschluss", "auskunft"] },
+              "bezeichnung": { "type": "string" },
+              "fundstelle": { "type": "string", "description": "Seite, Paragraph, URL" },
+              "abgerufen_am": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "methode": {
+          "type": "string",
+          "enum": ["manuell", "ki-extraktion", "ki-extraktion-geprueft", "automatischer-export"],
+          "description": "Wie ist dieser Datensatz entstanden? Bei KI-Extraktion muss human_verified gesetzt sein."
+        },
+        "werkzeug": { "type": ["string", "null"], "description": "z.B. 'Claude Opus 5 / Claude Code'" },
+        "erstellt_am": { "type": "string", "format": "date" },
+        "human_verified": {
+          "type": "boolean",
+          "description": "Hat ein Mensch den Inhalt gegen die Primärquelle geprüft? Bei false darf kein Automat den Datensatz als verbindlich behandeln."
+        },
+        "verified_von": { "type": ["string", "null"] }
+      }
+    },
+
+    "gueltig_ab": { "type": ["string", "null"], "format": "date" },
+    "gueltig_bis": { "type": ["string", "null"], "format": "date" },
+
+    "ki_hinweise": {
+      "type": "object",
+      "description": "Explizite Anweisungen an maschinelle Konsumenten dieses Datensatzes.",
+      "properties": {
+        "darf": { "type": "array", "items": { "type": "string" } },
+        "darf_nicht": { "type": "array", "items": { "type": "string" } },
+        "bei_unsicherheit": { "type": "string" }
+      }
+    },
+
+    "offene_punkte": {
+      "type": "array",
+      "description": "Was in diesem Datensatz noch fehlt oder ungeklärt ist. Maschinenlesbar, damit ein Automat die Lücke benennen statt füllen kann.",
+      "items": {
+        "type": "object",
+        "required": ["frage", "blockiert"],
+        "properties": {
+          "frage": { "type": "string" },
+          "blockiert": { "type": "string", "description": "Was kann deswegen nicht entschieden werden?" },
+          "zustaendig": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

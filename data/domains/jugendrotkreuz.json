@@ -1,0 +1,369 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "jugendrotkreuz",
+  "titel": "Österreichisches Jugendrotkreuz (ÖJRK) – Layoutrichtlinie",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/jugendrotkreuz",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/jugendrotkreuz/basiselemente",
+    "https://design.roteskreuz.at/jugendrotkreuz/gestaltungsraster",
+    "https://design.roteskreuz.at/jugendrotkreuz/print",
+    "https://design.roteskreuz.at/jugendrotkreuz/werbemittel"
+  ],
+  "ebene": "L4-subbrand",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 24,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Jugendrotkreuz (Übersicht)",
+        "fundstelle": "https://design.roteskreuz.at/jugendrotkreuz",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖJRK Basiselemente – Logo, Schrift, Farben",
+        "fundstelle": "https://design.roteskreuz.at/jugendrotkreuz/basiselemente",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖJRK Gestaltungsraster, Print, Werbemittel",
+        "fundstelle": "https://design.roteskreuz.at/jugendrotkreuz",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "beschluss",
+        "bezeichnung": "Präsidentenkonferenz",
+        "fundstelle": "Neues ÖJRK-Logo beschlossen am 08.06.2018"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "stellung": {
+    "beschreibung": "Das ÖJRK tritt als Bereich des ÖRK auf, hat aber durch seine Sonderstellung weiterhin Bedarf nach einem eigenen Logo.",
+    "begruendung_sonderstellung": "Verankerung seiner Aufgaben und Nennung im Rotkreuzgesetz (§ 3 RKG, Verbreitung des Gedankenguts).",
+    "verhaeltnis_zum_oerk_cd": "Der JRK-Auftritt wird in das ÖRK-CD integriert. Ziel ist die zielgruppengerechte Ansprache von Kindern, Jugendlichen und ihren Betreuungspersonen.",
+    "hinweis_praezedenz": "Als L4-subbrand nachgeordnet. Bei Widerspruch gelten ÖRK-Regeln (L1) und Emblemrecht (L0)."
+  },
+  "logo": {
+    "beschlossen_am": "2018-06-08",
+    "beschlossen_von": "Präsidentenkonferenz",
+    "ersetzt": "alle vorherigen Versionen",
+    "aufbau": "Immer und ausschließlich Wahrzeichen plus ausgeschriebener Schriftzug „ÖSTERREICHISCHES JUGENDROTKREUZ“.",
+    "hintergrund": "Logo und Schutzzone müssen auf weißem Hintergrund stehen.",
+    "zeiligkeit": [
+      "einzeilig",
+      "zweizeilig"
+    ],
+    "slogan": "„Aus Liebe zum Menschen.“ wird eingesetzt, wo möglich – gleiche Regeln wie beim ÖRK-Logo.",
+    "mindestgroessen_mm": {
+      "zweizeilig_mit_slogan": 17,
+      "einzeilig_mit_slogan": 35
+    },
+    "kombination_mit_oerk_logo": "Auf allen ÖJRK-Publikationen ist nach Möglichkeit das ÖJRK-Logo zu verwenden. Das ÖRK-Logo muss NICHT zusätzlich verwendet werden.",
+    "varianten_verfuegbar": [
+      "mit Slogan einzeilig",
+      "mit Slogan zweizeilig",
+      "ohne Slogan einzeilig",
+      "ohne Slogan zweizeilig",
+      "Sonderlogo"
+    ],
+    "anfragen": "ÖJRK-Landesleitung im jeweiligen Landesverband oder cd@roteskreuz.at"
+  },
+  "schrift": {
+    "regel": "Identisch mit dem ÖRK: Hausschrift Dunant, Ersatzschrift Arial bzw. Helvetica.",
+    "verweis": "tokens/typography.tokens.json"
+  },
+  "farben": {
+    "grundregel": "Es gelten die CD-Farben des ÖRK: Weiß, Schwarz, Rot und Grau. Das Logorot kommt nur im Logo vor, nicht in Typografie oder als Schmuckfarbe.",
+    "akzentfarben": "Für Printpublikationen zusätzlich zu den Primärfarben zulässig.",
+    "get_social_farbwelt": {
+      "zweck": "Zielgruppengerechte Ansprache von Kindern, Jugendlichen und Betreuungspersonen; auch für Projekte wie Stammzellspende.",
+      "hauptfarbe": "Dunkelviolett",
+      "herkunft": "Boicut Artwork / Get-Social-Herz",
+      "palette": [
+        {
+          "nr": 1,
+          "hex": "#403A60",
+          "rgb": [
+            64,
+            58,
+            96
+          ],
+          "cmyk": [
+            86,
+            83,
+            9,
+            45
+          ],
+          "pantone": "5265 C"
+        },
+        {
+          "nr": 2,
+          "hex": "#7C7FAB",
+          "rgb": [
+            124,
+            127,
+            171
+          ],
+          "cmyk": [
+            55,
+            48,
+            6,
+            0
+          ],
+          "pantone": "7675 C"
+        },
+        {
+          "nr": 3,
+          "hex": "#99D6EA",
+          "rgb": [
+            153,
+            214,
+            234
+          ],
+          "cmyk": [
+            34,
+            0,
+            5,
+            0
+          ],
+          "pantone": "2975 C"
+        },
+        {
+          "nr": 4,
+          "hex": "#A0DAB3",
+          "rgb": [
+            160,
+            218,
+            179
+          ],
+          "cmyk": [
+            32,
+            0,
+            30,
+            0
+          ],
+          "pantone": "344 C"
+        },
+        {
+          "nr": 5,
+          "hex": "#F8A3BC",
+          "rgb": [
+            248,
+            163,
+            188
+          ],
+          "cmyk": [
+            0,
+            39,
+            10,
+            0
+          ],
+          "pantone": "189 C"
+        },
+        {
+          "nr": 6,
+          "hex": "#FF808B",
+          "rgb": [
+            255,
+            128,
+            139
+          ],
+          "cmyk": [
+            0,
+            54,
+            38,
+            0
+          ],
+          "pantone": "177 C"
+        },
+        {
+          "nr": 7,
+          "hex": "#F2E5AA",
+          "rgb": [
+            242,
+            229,
+            170
+          ],
+          "cmyk": [
+            0,
+            13,
+            48,
+            0
+          ],
+          "pantone": "2001 C"
+        }
+      ],
+      "typofarbe": {
+        "hex": "#3F3A66",
+        "rgb": [
+          63,
+          58,
+          102
+        ],
+        "cmyk": [
+          82,
+          82,
+          29,
+          20
+        ]
+      },
+      "abweichung_hinweis": "Die Seite „Farben – Digitale Anwendungen“ des ÖRK führt dieselbe Palette unter „Sonderfarben“, dort mit RGB 125|128|171 für Farbe 2 statt 124|127|171. Geringfügige Abweichung zwischen zwei Portalseiten – vor Verwendung klären."
+    }
+  },
+  "gestaltungsraster": {
+    "angebot": "Nach dem CD-Gestaltungsraster gelayoutete leere Basisvorlagen (InDesign) mit der beruhigten Zone.",
+    "formate": [
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "ausrichtungen": [
+      "Hochformat",
+      "Querformat"
+    ],
+    "mutationen": [
+      "GS (Generalsekretariat)",
+      "LV (Landesverband)"
+    ],
+    "masse_mm": {
+      "A2": [
+        420,
+        594
+      ],
+      "A3": [
+        297,
+        420
+      ],
+      "A4": [
+        210,
+        297
+      ],
+      "A5": [
+        148,
+        210
+      ]
+    }
+  },
+  "print": {
+    "bereiche": [
+      "Geschäftsdrucksorten",
+      "Office-Vorlagen",
+      "Printprodukte"
+    ],
+    "printprodukte": [
+      {
+        "typ": "Deckblatt/Cover",
+        "format": "A4 (210 x 297 mm)",
+        "varianten": [
+          "abfallend",
+          "nicht-abfallend"
+        ],
+        "je_mit": "GS- und LV-Mutation"
+      },
+      {
+        "typ": "Einladung",
+        "format": "A5 (148 x 210 mm)",
+        "aufbau": "4-seitig: Deckblatt, Programminfo, Fotos, Logoleiste"
+      },
+      {
+        "typ": "Begleit- und Grußkarte",
+        "format": "210 x 99 mm",
+        "druckempfehlung": "glatter, nicht strukturierter, weißer, gestrichener Karton 300–350 g/m²"
+      },
+      {
+        "typ": "Handzettel",
+        "format": "A4",
+        "aufbau": "zweispaltig, Fotos vorgesehen"
+      },
+      {
+        "typ": "Leporello (Wickelfalz)",
+        "format": "A4, zweimal gefaltet",
+        "aufbau": "6-seitig; Fotos, Überschriften, Aufzählungen, Kontaktkasten, Logoleiste; Mutation mit beruhigter Zone oben statt unten"
+      },
+      {
+        "typ": "Namensschild (Tischaufsteller)",
+        "format": "200 x 200 mm, einmal gefalzt"
+      },
+      {
+        "typ": "Namensschild Badges",
+        "formate_datei": [
+          "InDesign",
+          "Word"
+        ],
+        "je_mit": "GS- und LV-Mutation"
+      }
+    ]
+  },
+  "werbemittel": [
+    {
+      "typ": "Beachflag",
+      "mutationen": [
+        "Standard",
+        "LV"
+      ]
+    },
+    {
+      "typ": "Rollup",
+      "groesse_mm": [
+        850,
+        2200
+      ],
+      "mutationen": [
+        "Standard",
+        "LV"
+      ]
+    },
+    {
+      "typ": "Tischfahne",
+      "groesse_mm": [
+        123,
+        195
+      ],
+      "mutationen": [
+        "Standard",
+        "LV"
+      ]
+    }
+  ],
+  "ki_hinweise": {
+    "darf": [
+      "Das ÖJRK als eigene Submarke mit eigenem Logo behandeln.",
+      "Auf die vorhandenen InDesign-Vorlagen und ihre Formate verweisen."
+    ],
+    "darf_nicht": [
+      "ÖRK- und ÖJRK-Logo automatisch nebeneinandersetzen – das ÖRK-Logo ist auf ÖJRK-Publikationen ausdrücklich nicht zusätzlich erforderlich.",
+      "Die Get-Social-Farbwelt außerhalb der Jugend- und Get-Social-Zielgruppen einsetzen.",
+      "Bezirks- oder Ortsstellenlogos ableiten – die gibt es weder beim ÖRK noch beim ÖJRK."
+    ],
+    "bei_unsicherheit": "An die ÖJRK-Landesleitung oder cd@roteskreuz.at verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Gilt für das ÖJRK-Logo dieselbe Schutzzone von 1,5 E wie beim ÖRK-Hauptlogo? Die Portalseite nennt eine Schutzzone, aber keinen Wert.",
+      "blockiert": "Maschinelle Prüfung von ÖJRK-Layouts.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Welcher RGB-Wert für Get-Social Farbe 2 gilt – 124|127|171 (ÖJRK-Seite) oder 125|128|171 (ÖRK-Seite)?",
+      "blockiert": "Eindeutige Farbdefinition der Submarke.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

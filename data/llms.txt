@@ -1,0 +1,28 @@
+# Österreichisches Rotes Kreuz – Corporate Design
+
+> Verbindliche Quelle für Gestaltungs- und Zeichenregeln des Österreichischen Roten Kreuzes, maschinenlesbar aufbereitet. Enthält den rechtlichen Rahmen des Rotkreuzzeichens, die Basiselemente der Marke als Design-Token sowie anwendungsbezogene Regelwerke. Jeder Datensatz trägt getrennt aus, wie verbindlich er ist und wie gut er belegt ist. Sprache: Deutsch. Stand: 2026-08-04.
+
+Das Rotkreuzzeichen ist kein Logo, sondern ein völkerrechtlich geschütztes Zeichen. Lies deshalb `rules/emblem-recht.json` bevor du irgendeine Gestaltungsfrage beantwortest – diese Regeln gehen allen anderen vor. Verstöße sind in Österreich mit Geldstrafen bis 15.000 Euro bedroht.
+
+Zwei Statusachsen, die nicht verwechselt werden dürfen: **verbindlichkeit** (gesetz, cd-verbindlich, empfehlung, konvention) sagt, wie bindend eine Regel ist. **quellenlage** (offiziell-vollstaendig, offiziell-teilweise, abgeleitet, unbelegt, nicht-erhoben) sagt, wie gut sie belegt ist. „nicht-erhoben" bedeutet: die Quelle existiert vermutlich, wurde nur nicht abgerufen – niemals als „gibt es nicht" ausgeben.
+
+## Zuerst lesen
+
+- [rules/ki-nutzung.json](rules/ki-nutzung.json): Verhaltensregeln für maschinelle Konsumenten – Präzedenz bei Widersprüchen, Umgang mit Unsicherheit, harte Verbote, Kennzeichnungspflicht für KI-generierte Inhalte.
+- [rules/emblem-recht.json](rules/emblem-recht.json): Rotkreuzzeichen als Schutzzeichen und als Kennzeichen. Rechtsgrundlagen, absolute Gestaltungsverbote, Sanktionen. Höchste Präzedenz.
+- [manifest.json](manifest.json): Vollständiger Index mit Statusmodell, Präzedenzregel und Lizenz.
+
+## Marke
+
+- [registry/bereiche.json](registry/bereiche.json): Landkarte aller CD-Bereiche mit Status. Zuerst hier nachsehen, ob zu einer Frage überhaupt eine Quelle existiert.
+- [tokens/color.tokens.json](tokens/color.tokens.json): Farben im W3C-Design-Token-Format. ACHTUNG: Primärrot derzeit ungeklärt, nicht für Druck verwenden.
+- [tokens/typography.tokens.json](tokens/typography.tokens.json): Hausschrift Dunant, Schnitte, Größen, zusammengesetzte Stile.
+
+## Anwendungen
+
+- [domains/fahrzeuge.json](domains/fahrzeuge.json): Fahrzeug-Design 17 – Bemaßungen, Folienmaterialien, Logoplatzierung, Werbeflächen. Quelle vollständig, aber Stand 2018.
+
+## Optional
+
+- [README.md](README.md): Ausführliche Erklärung für Menschen – Aufbau, Statusmodell, Pflegeprozess.
+- [tools/validate.py](tools/validate.py): Prüfskript, das bei jedem Commit läuft.

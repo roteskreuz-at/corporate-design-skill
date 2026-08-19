@@ -1,0 +1,317 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "fahrzeuge",
+  "titel": "Fahrzeug-Design 17",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/branding/kfz",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/branding/kfz/beispiele"
+  ],
+  "ebene": "L2-anwendung",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 24,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "pdf",
+        "bezeichnung": "Fahrzeug-Design 17, design112 GmbH im Auftrag des ÖRK",
+        "fundstelle": "design112_OERK_Manual.pdf, 88 Seiten, Version 17 Rev. 9, 19.01.2018",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "beschluss",
+        "bezeichnung": "Präsidentenkonferenz des Österreichischen Roten Kreuzes",
+        "fundstelle": "Beschluss vom 09.03.2017"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "gueltig_ab": "2018-01-19",
+  "gueltig_bis": null,
+  "aktualitaetswarnung": {
+    "stufe": "hoch",
+    "text": "Das Handbuch ist von 2018 und seither nicht überarbeitet. Der Abschnitt fahrzeugmodelle bildet den Fuhrpark von 2018 ab; neuere Baureihen und Elektrofahrzeuge fehlen. Die Bemaßungen und Grundregeln sind davon unberührt gültig, die Modellliste ist es nicht.",
+    "betrifft": [
+      "fahrzeugmodelle"
+    ]
+  },
+  "praezedenz_hinweis": "Alle Regeln dieses Datensatzes stehen unter rules/emblem-recht.json. Insbesondere darf das Sonderlogo auf keinem Fahrzeugteil invertiert, überlagert oder auf farbigem Grund platziert werden.",
+  "abschnitte": {
+    "leitgedanken": {
+      "quellenlage": "offiziell-vollstaendig",
+      "inhalt": [
+        "Zeichen des Roten Kreuzes als zentrales Symbol für neutrale und unterschiedslose Hilfe.",
+        "Klares, reduziertes, österreichweit einheitliches Design.",
+        "Unterscheidung zwischen Einsatz- und Nicht-Einsatzfahrzeugen, die dennoch eindeutig als Teil des Roten Kreuzes erkennbar bleiben.",
+        "Moderne reflektierende Materialien verbessern die Sichtbarkeit im Straßenverkehr.",
+        "Erhöhte Tagsichtbarkeit ist in Österreich gesetzlich nicht vorgeschrieben, wird in der Variante Einsatz-Gelb aber umgesetzt."
+      ]
+    },
+    "varianten": {
+      "quellenlage": "offiziell-vollstaendig",
+      "entscheidungsregel": "Die Wahl zwischen Einsatz-Gelb und Einsatz-Weiß trifft der jeweilige Landesverband, flächendeckend pro Bundesland.",
+      "inhalt": {
+        "einsatz-gelb": "Einsatzfahrzeug mit gelben, tag- und nachtreflektierenden Folienelementen.",
+        "einsatz-weiss": "Einsatzfahrzeug ohne die gelben Zusatzelemente, sonst identisches Grundkonzept.",
+        "nicht-einsatz": "Reduzierte Kennzeichnung, weiterhin eindeutig als Rotkreuzfahrzeug erkennbar."
+      }
+    },
+    "logo_platzierung": {
+      "quellenlage": "offiziell-vollstaendig",
+      "bemassungsregel": "Alle Höhen- und Breitenangaben beziehen sich immer auf die gesamte Wort-Bild-Marke, nie auf Einzelteile. Schriftgrößen in Punkt sind DTP-Punkt; Angaben in mm beziehen sich auf die Versalhöhe.",
+      "inhalt": {
+        "fensterblech-front-heck": {
+          "hoehe_mm": 400,
+          "logo": "ÖRK-Sonderlogo"
+        },
+        "tueradresse-seite": {
+          "hoehe_mm": 300,
+          "logo": "ÖRK-Sonderlogo"
+        },
+        "motorhaube-front": {
+          "hoehe_mm": 500,
+          "logo": "ÖRK-Sonderlogo",
+          "bedingung": "gebogen für Motorhaubenform, nur wenn kein Fensterblech-Logo möglich"
+        }
+      }
+    },
+    "werbeflaechen": {
+      "quellenlage": "offiziell-vollstaendig",
+      "grundregel": "Das Fahrzeug muss eindeutig als Rotkreuzfahrzeug erkennbar bleiben. Fremdlogos dürfen in Größe und Platzierung nicht mit dem ÖRK-Sonderlogo konkurrieren.",
+      "inhalt": {
+        "eigenwerbung-heck": {
+          "breite_mm": 758,
+          "hoehe_mm": 542,
+          "platzierung": "linke Hälfte der Heckscheibe"
+        },
+        "fremdwerbung-standard": {
+          "max_breite_mm": 400,
+          "max_hoehe_mm": 280,
+          "platzierung": "Fahrzeugseite unten, unterhalb des roten Balkens, vor dem Hinterrad"
+        },
+        "fremdwerbung-ausweich-heck": {
+          "max_breite_mm": 400,
+          "max_hoehe_mm": 280,
+          "bedingung": "wenn seitlich bautechnisch nicht möglich"
+        },
+        "fremdwerbung-vw-caddy": {
+          "max_breite_mm": 660,
+          "max_hoehe_mm": 225
+        }
+      }
+    },
+    "fahrzeugmodelle": {
+      "quellenlage": "offiziell-teilweise",
+      "warnung": "GEMISCHTE BELEGLAGE. In der Vorgängerversion stand dieser Abschnitt unter dem pauschalen Status 'complete', obwohl ein Teil der Einträge nur aus dem Inhaltsverzeichnis des Handbuchs stammt und nie gegen die Detailseiten geprüft wurde. Deshalb trägt jeder Eintrag jetzt seine eigene Beleglage.",
+      "inhalt": [
+        {
+          "hersteller": "VW",
+          "modell": "T6",
+          "typ": "einsatz",
+          "varianten": [
+            "Einsatz-Gelb",
+            "Einsatz-Weiß"
+          ],
+          "details": "Mittelhochdach, Radstand 3400 mm",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "VW",
+          "modell": "Caddy",
+          "typ": "nicht-einsatz",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "VW",
+          "modell": "up!",
+          "typ": "nicht-einsatz",
+          "details": "5-Türer",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "Mercedes-Benz",
+          "modell": "Sprinter",
+          "typ": "einsatz",
+          "varianten": [
+            "Einsatz-Gelb"
+          ],
+          "details": "Radstand 3665 mm, Hochdach",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "Mercedes-Benz",
+          "modell": "Vito",
+          "typ": "einsatz",
+          "varianten": [
+            "Einsatz-Gelb"
+          ],
+          "details": "lang",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "Fiat",
+          "modell": "Ducato",
+          "typ": "einsatz",
+          "details": "Werbefläche am Heck statt seitlich, bautechnisch bedingt",
+          "beleg": "detailseite"
+        },
+        {
+          "hersteller": "Mercedes-Benz",
+          "modell": "B-Klasse",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "Seat",
+          "modell": "Ibiza",
+          "typ": "nicht-einsatz",
+          "details": "5-Türer",
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "Fiat",
+          "modell": "New Panda",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "Ford",
+          "modell": "Kuga",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "Ford",
+          "modell": "Transit",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "Ford",
+          "modell": "Transit Custom",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        },
+        {
+          "hersteller": "BMW",
+          "modell": "X3",
+          "typ": null,
+          "beleg": "nur-inhaltsverzeichnis"
+        }
+      ],
+      "beleg_legende": {
+        "detailseite": "Aus einer Bemaßungsseite des Handbuchs übernommen.",
+        "nur-inhaltsverzeichnis": "Nur im Inhaltsverzeichnis erwähnt, Detailseite nicht ausgewertet. Nicht als vollständige Regel behandeln."
+      }
+    },
+    "bemassungen": {
+      "quellenlage": "offiziell-vollstaendig",
+      "hinweis": "Vollständige Bemaßungstabellen je Fahrzeugtyp werden aus der Vorgängerdatei unverändert übernommen. Hier aus Platzgründen nur das Referenzbeispiel.",
+      "referenzbeispiel_vw_t6": {
+        "fahrzeug": "VW T6, Mittelhochdach, Radstand 3400 mm",
+        "bauchbinde_seitlich": {
+          "hoehe_grundlinie_mm": 30,
+          "abstand_mm": 15,
+          "hoehe_mm": 195,
+          "min_hoehe_mm": 40,
+          "winkel_grad": [
+            36,
+            86.5
+          ]
+        },
+        "balken_front": {
+          "hoehe_mm": 82,
+          "laenge_mm": 1300,
+          "winkel_grad": [
+            40,
+            -40
+          ]
+        },
+        "balken_heck": {
+          "hoehe_mm": 110,
+          "laenge_mm": 910,
+          "winkel_grad": [
+            40,
+            -40
+          ]
+        },
+        "warnheck_heckklappe": {
+          "hoehe_1_2_mm": 191,
+          "hoehe_3_4_mm": 95.5
+        }
+      }
+    },
+    "folien_materialien": {
+      "quellenlage": "offiziell-vollstaendig",
+      "warnung": "Produktbezeichnungen von Drittherstellern, Stand 2018. Vor Beschaffung Verfügbarkeit prüfen – Folienserien werden abgekündigt.",
+      "inhalt": [
+        {
+          "farbe": "Feuerrot",
+          "produkt": "3M 580E-82 / Oralite 5600E-030",
+          "eigenschaft": "retroreflektierend"
+        },
+        {
+          "farbe": "Schwarz",
+          "produkt": "3M 580E-85 / Oralite 5600E-070",
+          "eigenschaft": "retroreflektierend"
+        },
+        {
+          "farbe": "Weiß",
+          "produkt": "3M 580E-10 / Oralite 5600E-010",
+          "eigenschaft": "retroreflektierend"
+        },
+        {
+          "farbe": "Lime",
+          "produkt": "Oralite VC612",
+          "eigenschaft": "fluoreszierend-hochreflektierend"
+        },
+        {
+          "farbe": "Blau",
+          "produkt": "Oralite VC612",
+          "eigenschaft": "hochreflektierend"
+        }
+      ],
+      "offene_verknuepfung": "Für 'Feuerrot' existiert kein Farbwert in tokens/color.tokens.json. Physisches und digitales Rot sind damit nicht verbunden – eine Prüfung, ob eine Fahrzeugfolie dem CD-Rot entspricht, ist maschinell nicht möglich."
+    }
+  },
+  "verweise": {
+    "kontakte": "registry/kontakte-kfz.json (sichtbarkeit: intern – personenbezogene Daten)",
+    "quelle_online": "https://design.roteskreuz.at/branding/kfz"
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Bemaßungen und Grundregeln als verbindlich zitieren.",
+      "Auf die Altersfreigabe von 2018 hinweisen, wenn nach aktuellen Fahrzeugen gefragt wird."
+    ],
+    "darf_nicht": [
+      "Einträge mit beleg = 'nur-inhaltsverzeichnis' als gesicherte Regel ausgeben.",
+      "Bemaßungen auf Fahrzeugmodelle übertragen, die nicht im Handbuch stehen. Für neue Modelle gibt es keine Regel – das ist die Antwort.",
+      "Aus der Folienfarbe 'Feuerrot' einen Hex-Wert ableiten."
+    ],
+    "bei_unsicherheit": "An den KFZ-Ansprechpartner des zuständigen Landesverbands verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Gibt es eine Fortschreibung des Handbuchs für aktuelle Baureihen (VW T7, ID.Buzz, Elektrofahrzeuge)?",
+      "blockiert": "Jede Auskunft zu Fahrzeugen, die nach 2018 beschafft wurden.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Welcher Farbwert entspricht der Folie 'Feuerrot' im digitalen Farbraum?",
+      "blockiert": "Durchgängige Farbkonsistenz zwischen Fahrzeug, Print und Digital.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

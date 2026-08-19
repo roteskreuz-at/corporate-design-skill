@@ -1,0 +1,272 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "vorlagen-befund",
+  "titel": "Prüfbefund der offiziellen Vorlagendateien",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/print/office-vorlagen",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/digital/vorlagen",
+    "https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen",
+    "https://design.roteskreuz.at/grundelemente/typografie"
+  ],
+
+  "ebene": "L3-vorlage",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "intern",
+
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 6,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+
+  "provenance": {
+    "quellen": [
+      { "typ": "vorlage", "bezeichnung": "PRAES_OERK_DIGITAL_PP_2026_de-en-16-9_V1_13042026.potx", "fundstelle": "1.868.628 Bytes, heruntergeladen von design.roteskreuz.at/digital/vorlagen", "abgerufen_am": "2026-08-04" },
+      { "typ": "vorlage", "bezeichnung": "Skriptum.dotx", "fundstelle": "710.680 Bytes, design.roteskreuz.at/print/office-vorlagen", "abgerufen_am": "2026-08-04" },
+      { "typ": "vorlage", "bezeichnung": "PRAES_LBZ_PP_2018_16-9.potx", "fundstelle": "166.553 Bytes, Print-CD-Präsentationsvorlage", "abgerufen_am": "2026-08-04" },
+      { "typ": "vorlage", "bezeichnung": "OERK_Untertitel.zip, OERK_Motion_Graphic_Templates_de_neu.zip", "fundstelle": "design.roteskreuz.at/digital/vorlagen", "abgerufen_am": "2026-08-04" }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code – Auspacken der OOXML-Pakete und Auslesen von theme1.xml, styles.xml, slideLayouts",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+
+  "zweck": "Abgleich der ausgelieferten Vorlagendateien gegen die verbindlichen Werte des Styleguide. Dieser Datensatz ist kein Regelwerk, sondern ein Mängelbericht – er gehört in die Hand der CD-Stelle, nicht in eine öffentliche Auslieferung.",
+
+  "pruefumfang": {
+    "stand": "2026-08-04",
+    "seiten_erfasst": 61,
+    "dateien_erfasst": 294,
+    "datenmenge_mb": 638,
+    "davon_office_pakete_ooxml": 65,
+    "davon_adobe_dateien_mit_xmp": 175,
+    "methode": "Vollständiger Download aller unter /fileadmin/ verlinkten Dateien; OOXML-Pakete entpackt und theme1.xml, styles.xml sowie alle Farb- und Schriftverweise ausgelesen; InDesign-, Photoshop-, EPS- und PDF-Dateien über den eingebetteten XMP-Block ausgewertet (Schriftliste, Farbfelder, Erzeugerprogramm).",
+    "nicht_auswertbar": "Audio- und Bildformate (MP3, WAV, JPG, PNG) wurden nur erfasst, nicht inhaltlich analysiert."
+  },
+
+  "gesamtbild": {
+    "kernaussage": "Die Vorlagenbibliothek ist gestalterisch konsistent, technisch aber durchgängig unsauber aufgesetzt. Die Hausschrift wird verwendet (Dunant in 3.402 Vorkommen, in 165 von 175 Adobe-Dateien), die verbindlichen Farben ebenfalls (#B70E0C 677-mal). Falsch ist die technische Verankerung: Themes, Farbfelder und Schriftschemata sind fast überall Standardwerte der jeweiligen Software statt ÖRK-Werte.",
+    "zahlen": {
+      "ooxml_mit_theme_abweichung": 65,
+      "ooxml_ohne_hausschrift_im_theme": 57,
+      "adobe_dateien_mit_dunant": 165,
+      "adobe_dateien_ohne_dunant": 46
+    }
+  },
+
+  "befunde": [
+    {
+      "id": "grau-systematisch-falsch",
+      "schwere": "hoch",
+      "titel": "Das falsche Grau ist 16-mal häufiger als das richtige",
+      "beleg": "Auszählung über alle 65 OOXML-Pakete",
+      "zahlen": { "#808080_office_standardgrau": 596, "#838383_laut_styleguide": 36 },
+      "bewertung": "#808080 ist der Standardgrau von Microsoft Office. Das verbindliche ÖRK-Grau ist #838383 (Pantone 430 C, CMYK 0/0/0/50). Der Fehler zieht sich durch praktisch alle Vorlagen und betrifft unter anderem den grauen Balken des Landesverbandszusatzes im Logo.",
+      "massnahme": "Sammelkorrektur über alle Vorlagen; Grauwert in die Theme-Definition aufnehmen, statt ihn je Element einzutragen."
+    },
+    {
+      "id": "dunant-school-undokumentiert",
+      "schwere": "hoch",
+      "titel": "Ein sechster Schriftschnitt „Dunant-School“ wird verwendet, ist aber nirgends dokumentiert und nicht herunterladbar",
+      "beleg": "XMP-Schriftliste von 47 InDesign-Dateien – sämtliche JRK-Gestaltungsraster und JRK-Printvorlagen",
+      "bewertung": "Der Styleguide nennt unter Typografie ausdrücklich fünf Schnitte: Light, Regular, Medium, Bold und Signs. Der Download „Dunant.zip“ enthält nach Aktenlage ebenfalls nur diese. Wer eine JRK-Vorlage öffnet, bekommt daher eine Fehlermeldung wegen fehlender Schrift und InDesign ersetzt sie – womit die Vorlage ihr Layout verliert.",
+      "massnahme": "Klären, ob Dunant-School Teil des CD ist. Falls ja: dokumentieren und zum Download stellen. Falls nein: die 47 JRK-Vorlagen auf einen dokumentierten Schnitt umstellen."
+    },
+    {
+      "id": "jrk-office-standardthemes",
+      "schwere": "hoch",
+      "titel": "Sämtliche Jugendrotkreuz-Office-Vorlagen tragen unverändert das Microsoft-Standardthema",
+      "beleg": "12 DOTX-Dateien unter /jugendrotkreuz/print/office-vorlagen",
+      "gefunden": { "theme_schriften": "Calibri / Cambria", "theme_farben": "Office-2007-Schema (#1F497D, #4F81BD, #C0504D, #9BBB59, #8064A2, #4BACC6, #F79646)" },
+      "bewertung": "Betroffen sind Skriptum, Infoblatt, Interne Info, Presseaussendung, Protokoll und Wegweiser – jeweils in Grund- und BL-Fassung. Weder Schrift noch Farben des ÖJRK sind im Theme hinterlegt.",
+      "massnahme": "Ein ÖRK-/ÖJRK-Theme erstellen und in alle Office-Vorlagen einbetten."
+    },
+    {
+      "id": "aptos-neue-vorlagen",
+      "schwere": "hoch",
+      "titel": "Die drei jüngsten PowerPoint-Dateien führen die neue Microsoft-Standardschrift „Aptos“ im Theme",
+      "beleg": "PRAES_OERK_DIGITAL_PP_2026 (13.04.2026), Jugendrotkreuz_Vorlage_Praesentationsfolien_052026, CD-Update-Digitalkommunikation-Webinar",
+      "bewertung": "Aptos hat Calibri 2024 als Office-Standard abgelöst. Dass ausgerechnet die neuesten Vorlagen davon betroffen sind, zeigt: Der Fehler ist nicht historisch, sondern entsteht bei jeder neuen Vorlage erneut, weil beim Anlegen kein ÖRK-Theme geladen wird.",
+      "massnahme": "Ein ÖRK-Theme als Startpunkt bereitstellen und im Erstellprozess verbindlich machen. Das ist die Ursache, nicht das Symptom."
+    },
+    {
+      "id": "namensschilder-fremdrot",
+      "schwere": "mittel",
+      "titel": "Die Namensschild-Vorlagen verwenden ein Rot, das es im CD nicht gibt",
+      "beleg": "#C6220A, 44 Vorkommen je Datei, in drei Namensschild-Badge-Vorlagen",
+      "bewertung": "Der Ton liegt sichtbar neben Dunkelrot #B70E0C und ist keine Rundungsabweichung, sondern eine andere Farbe.",
+      "massnahme": "Auf #B70E0C umstellen."
+    },
+    {
+      "id": "swatch-benennung",
+      "schwere": "mittel",
+      "titel": "Dieselbe Farbe trägt in den InDesign-Vorlagen drei verschiedene Namen",
+      "beleg": "XMP-Farbfelder über 165 InDesign-Dateien",
+      "gefunden": [
+        { "name": "Rot M=100 Y=100", "haeufigkeit": 67, "bedeutung": "Logorot" },
+        { "name": "C=0 M=100 Y=100 K=0", "haeufigkeit": 36, "bedeutung": "Logorot" },
+        { "name": "CMYK Rot", "haeufigkeit": 25, "bedeutung": "Logorot" },
+        { "name": "C=0 M=100 Y=100 K=25", "haeufigkeit": 57, "bedeutung": "Dunkelrot – Wert korrekt, Name generisch" }
+      ],
+      "bewertung": "Die Farbwerte stimmen, die Benennung nicht. Für Menschen verwirrend, für jede automatische Prüfung unbrauchbar – ein Skript kann nicht erkennen, welches Farbfeld das Logorot ist.",
+      "massnahme": "Verbindliche Farbfeldnamen festlegen („ÖRK Logorot“, „ÖRK Dunkelrot“, „ÖRK Grau“) und eine gemeinsame Farbfeldbibliothek (ASE) zum Download stellen."
+    },
+    {
+      "id": "adobe-standardschriften",
+      "schwere": "niedrig",
+      "titel": "Adobe-Standardschriften sind in fast allen InDesign-Vorlagen mitgeführt",
+      "beleg": "Times-Roman und Schnitte in 156 von 165 Dateien, MinionPro in 20 Dateien",
+      "bewertung": "Meist Überbleibsel von Standard-Absatzformaten, kein sichtbarer Gestaltungsfehler. Erhöht aber die Wahrscheinlichkeit, dass unformatierter Text in Times erscheint.",
+      "massnahme": "Bei der nächsten Überarbeitung Standardformate auf Dunant umstellen."
+    },
+    {
+      "id": "werkzeugalter",
+      "schwere": "niedrig",
+      "titel": "Ein großer Teil der Assets stammt aus sehr alten Programmversionen",
+      "beleg": "XMP-Feld CreatorTool: Adobe Illustrator CS5.1 in 61 Dateien (Version von 2011), Illustrator CC 2017 in 21, InDesign CC 13.0 in 15",
+      "bewertung": "Kein Mangel für sich genommen, aber ein Hinweis auf das reale Alter der Bibliothek und ein Risiko bei künftiger Bearbeitbarkeit.",
+      "massnahme": "Bei Neuauflagen Quelldateien mitversionieren."
+    },
+    {
+      "id": "kfz-designsheets-fremdschriften",
+      "schwere": "niedrig",
+      "titel": "Die KFZ-Designsheets verwenden Herstellerschriften",
+      "beleg": "HelveticaNeueLT-Condensed, SohoGothicStd in den Fahrzeug-PDFs von Mercedes, Opel u.a.",
+      "bewertung": "Plausibel und unkritisch – es handelt sich um technische Datenblätter der Fahrzeughersteller, nicht um ÖRK-Kommunikationsmittel.",
+      "massnahme": "keine"
+    },
+    {
+      "id": "potx-2026-themefarben",
+      "datei": "PRAES_OERK_DIGITAL_PP_2026_de-en-16-9_V1_13042026.potx",
+      "schwere": "hoch",
+      "titel": "Das Farbschema der digitalen PowerPoint-Vorlage weicht durchgängig vom Styleguide ab",
+      "beleg": "ppt/theme/theme1.xml, Element a:clrScheme",
+      "abweichungen": [
+        { "rolle": "dk2",     "in_vorlage": "#B70F0B", "laut_styleguide": "#B70E0C", "bezeichnung": "Dunkelrot" },
+        { "rolle": "accent1", "in_vorlage": "#5B0804", "laut_styleguide": "#5C0805", "bezeichnung": "Rotabstufung 6" },
+        { "rolle": "accent2", "in_vorlage": "#89090A", "laut_styleguide": "#8A0A0A", "bezeichnung": "Rotabstufung 5" },
+        { "rolle": "accent3", "in_vorlage": "#C33C3C", "laut_styleguide": "#C43D3D", "bezeichnung": "Rotabstufung 4" },
+        { "rolle": "accent4", "in_vorlage": "#D46D6E", "laut_styleguide": "#D46E6E", "bezeichnung": "Rotabstufung 3" },
+        { "rolle": "accent5", "in_vorlage": "#E39E9E", "laut_styleguide": "#E39E9E", "bezeichnung": "korrekt" },
+        { "rolle": "accent6", "in_vorlage": "#F4DCDB", "laut_styleguide": "#F4DCDB", "bezeichnung": "korrekt" },
+        { "rolle": "lt2",     "in_vorlage": "#808080", "laut_styleguide": "#838383", "bezeichnung": "Grau" }
+      ],
+      "bewertung": "Sechs von acht Farbrollen weichen ab, jeweils um ein bis drei Digits. Kein Gestaltungsentscheid, sondern eine fehlerhaft übertragene Palette. Die Abweichungen sind unsichtbar, aber jede automatisierte CD-Prüfung schlägt an, und jedes aus dem Theme abgeleitete Element trägt den falschen Wert weiter.",
+      "massnahme": "Theme-Farbschema gegen tokens/color.tokens.json korrigieren und Vorlage neu ausliefern."
+    },
+    {
+      "id": "potx-2026-fremdfarben",
+      "datei": "PRAES_OERK_DIGITAL_PP_2026_de-en-16-9_V1_13042026.potx",
+      "schwere": "mittel",
+      "titel": "Die Vorlage enthält Farben, die im CD nicht vorkommen",
+      "beleg": "Auszählung aller srgbClr-Werte im gesamten OOXML-Paket",
+      "gefunden": [
+        { "hex": "#C00000", "haeufigkeit": 20, "einordnung": "Standardrot der Microsoft-Office-Palette – nicht Teil des ÖRK-CD" },
+        { "hex": "#F26B43", "haeufigkeit": 20, "einordnung": "Orange – nicht Teil des ÖRK-CD" },
+        { "hex": "#FBAE40", "haeufigkeit": 12, "einordnung": "Gelborange – nicht Teil des ÖRK-CD" },
+        { "hex": "#FE0000", "haeufigkeit": 2,  "einordnung": "beinahe Logorot (#FF0000), aber nicht identisch" },
+        { "hex": "#B70E0C", "haeufigkeit": 14, "einordnung": "korrektes Dunkelrot – existiert in derselben Datei parallel zu den falschen Fassungen" },
+        { "hex": "#B70E0B", "haeufigkeit": 2,  "einordnung": "hartkodierter Hintergrund der Aussage-Folie" }
+      ],
+      "bewertung": "In ein und derselben offiziellen Vorlage liegen mindestens vier verschiedene Rottöne nebeneinander, darunter der Microsoft-Standardton. Das korrekte #B70E0C ist enthalten – es wird nur nicht konsequent verwendet.",
+      "massnahme": "Fremdfarben entfernen, alle Rotflächen auf die Theme-Referenz umstellen statt hart einzutragen."
+    },
+    {
+      "id": "potx-2026-schriftschema",
+      "datei": "PRAES_OERK_DIGITAL_PP_2026_de-en-16-9_V1_13042026.potx",
+      "schwere": "hoch",
+      "titel": "Das Schriftschema des Themes ist die Microsoft-Standardschrift, nicht Dunant",
+      "beleg": "theme1.xml: majorFont = „Aptos Display“, minorFont = „Aptos“",
+      "einschraenkung": "Die vorhandenen Folien selbst verwenden Dunant (76 Vorkommen) und Dunant Medium (76 Vorkommen) – der Mangel betrifft nicht das Bestehende.",
+      "bewertung": "Jeder neu eingefügte Textrahmen und jedes neu angelegte Layout erbt Aptos statt Dunant. Der Fehler wirkt also nicht sofort, sondern schleichend bei jeder Weiterverwendung der Vorlage.",
+      "massnahme": "Schriftschema im Theme auf Dunant (major) und Dunant (minor) setzen."
+    },
+    {
+      "id": "dotx-skriptum-theme",
+      "datei": "Skriptum.dotx",
+      "schwere": "hoch",
+      "titel": "Die Word-Vorlage hat überhaupt kein ÖRK-Farbschema",
+      "beleg": "word/theme/theme1.xml",
+      "gefunden": [
+        { "rolle": "dk2",     "wert": "#1F497D", "einordnung": "Office-Standard Dunkelblau" },
+        { "rolle": "accent1", "wert": "#4F81BD", "einordnung": "Office-Standard Blau" },
+        { "rolle": "accent2", "wert": "#C0504D", "einordnung": "Office-Standard Rotbraun" },
+        { "rolle": "accent3", "wert": "#9BBB59", "einordnung": "Office-Standard Grün" },
+        { "rolle": "accent4", "wert": "#8064A2", "einordnung": "Office-Standard Violett" },
+        { "rolle": "accent6", "wert": "#F79646", "einordnung": "Office-Standard Orange" }
+      ],
+      "bewertung": "Das ist unverändert das Standardfarbschema von Office 2007. Das korrekte Dunkelrot #B70E0C kommt 27-mal vor, aber ausschließlich als direkte Formatierung. Wer in dieser Vorlage die Farbauswahl von Word öffnet, bekommt Microsoft-Blau und -Orange angeboten – nicht die ÖRK-Farben. Tabellenformate, Diagramme und SmartArt greifen automatisch auf dieses Schema zu.",
+      "massnahme": "Eigenes ÖRK-Theme (Farben und Schriften) anlegen und in alle DOTX-Vorlagen einbetten. Betrifft nach Aktenlage auch die übrigen 19 DOTX-Dateien – noch nicht einzeln geprüft."
+    },
+    {
+      "id": "potx-2018-fremdschriften",
+      "datei": "PRAES_LBZ_PP_2018_16-9.potx",
+      "schwere": "niedrig",
+      "titel": "Print-CD-Präsentationsvorlage enthält Fremd- und Altschriften",
+      "beleg": "Schriftauszählung im Paket",
+      "gefunden": ["MS PGothic (31x)", "Times New Roman (19x)", "Wingdings (16x)", "ORKRegular (12x)", "Dunant (26x)", "Dunant Medium (23x)"],
+      "bewertung": "„ORKRegular“ ist offenbar eine Vorgängerschrift des ÖRK und im aktuellen Styleguide nicht mehr genannt. MS PGothic stammt aus der ostasiatischen Standardbelegung von PowerPoint.",
+      "massnahme": "Klären, ob diese 2018er Vorlagen noch gültig sind oder durch die Vorlage von 2026 abgelöst wurden."
+    }
+  ],
+
+  "geprueft_ohne_befund": [
+    "OERK_Untertitel.zip – enthält fünf Premiere-Textstile (1x1, 4x5, 9x16, HD 16x9, 4K 16x9). Struktur plausibel, Schrift- und Farbwerte liegen im Binärteil und wurden noch nicht dekodiert.",
+    "OERK_Motion_Graphic_Templates_de_neu.zip – 43 Einträge, gegliedert in Half_Bleed, Full_Bleed, Abspann und einen font-Ordner; je ein MASTER- und ein HEADLINE+SUBLINE-Template."
+  ],
+
+  "mutationssystem": {
+    "beschreibung": "Nahezu jede Vorlage existiert in mehreren Ausprägungen. Das ist kein Zufall, sondern das Verteilmodell des ÖRK-CD und muss in einer maschinenlesbaren Quelle abgebildet werden.",
+    "achsen": [
+      { "achse": "Organisationsebene", "auspraegungen": ["überregional/GS", "LV-Mutation (Landesverbandszusatz im grauen Balken)"], "kennzeichnung_im_dateinamen": "_LV, -LV-Mutation, _LV_02" },
+      { "achse": "Sprache", "auspraegungen": ["Deutsch", "Englisch", "Französisch", "Portugiesisch (nur Logo)"], "kennzeichnung_im_dateinamen": "_engl, _ENGL, _FRANZ, -Sprachversion_Englisch" },
+      { "achse": "Submarke", "auspraegungen": ["ÖRK", "ÖJRK"], "kennzeichnung_im_dateinamen": "JRK-Präfix; innerhalb JRK zusätzlich das Kürzel -BL" },
+      { "achse": "Format/Ausrichtung", "auspraegungen": ["A2/A3/A4/A5", "Hoch-/Querformat", "1:1, 4:5, 9:16, 16:9"] },
+      { "achse": "Beruhigte Zone", "auspraegungen": ["lang (LBZ)", "kurz (KBZ)"], "kennzeichnung_im_dateinamen": "LBZ, KBZ, BZunten, BZrechts" }
+    ],
+    "zaehlung": { "dateien_gesamt": 294, "davon_erkennbare_lv_mutationen": 48 },
+    "konsequenz": "Ein Automat, der eine Vorlage auswählen soll, braucht diese Achsen als strukturierte Angaben. Aus dem Dateinamen allein sind sie nur unzuverlässig ableitbar – die Kennzeichnung ist über die Jahre uneinheitlich gewachsen (_LV vs. -LV-Mutation vs. -BL)."
+  },
+
+  "benennungsproblem_logo": {
+    "beschreibung": "Dieselbe Logodatei trägt je nach Kontext zwei Namen: im Print-CD „Sonderlogo“, im digitalen CD 2026 „Basislogo“. Die Ablagepfade sind entsprechend getrennt (Print/Grundelemente/Logo/Sonderlogo/ gegenüber Digitales_CD/Grundlagen/Logo/Basislogo/).",
+    "risiko": "Ein maschineller Konsument hält die beiden für verschiedene Assets und schlägt je nach Quelle unterschiedliche Dateien vor. Umgekehrt findet eine Suche nach „Basislogo“ die Print-Variante nicht.",
+    "empfehlung": "Eine kanonische Asset-ID vergeben und beide Namen als Alias führen."
+  },
+
+  "ki_hinweise": {
+    "darf": [
+      "Diesen Befund als Arbeitsliste für die Überarbeitung der Vorlagen verwenden.",
+      "Bei Fragen zu Farbwerten immer den Styleguide zitieren, nicht die Vorlagendatei."
+    ],
+    "darf_nicht": [
+      "Farbwerte aus einer Vorlagendatei als verbindlich ausgeben – bei Abweichung gilt design.roteskreuz.at.",
+      "Diesen Mängelbericht öffentlich ausliefern."
+    ],
+    "bei_unsicherheit": "An cd@roteskreuz.at verweisen."
+  },
+
+  "offene_punkte": [
+    {
+      "frage": "Sind die übrigen 19 DOTX- und 6 POTX-Vorlagen von denselben Theme-Mängeln betroffen?",
+      "blockiert": "Aussage über den Gesamtzustand der Vorlagenbibliothek.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Welche Schrift, Größe und Farbe geben die Premiere-Untertitelvorlagen tatsächlich vor?",
+      "blockiert": "CD-Prüfung von Untertiteln; Beantwortung eines offenen Punkts in domains/video.json.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Sind die Präsentationsvorlagen von 2018 (Print-CD) noch gültig oder durch die Fassung 2026 abgelöst?",
+      "blockiert": "Empfehlung, welche Präsentationsvorlage zu verwenden ist.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "emblem-recht",
+  "titel": "Rotkreuzzeichen – rechtlicher Rahmen (Schutzzeichen und Kennzeichen)",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/grundelemente/logo/digitale-anwendungen",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/branding/gebaeude/gebaeude-aussen",
+    "https://www.roteskreuz.at/die-schutzzeichen",
+    "https://www.roteskreuz.at/fileadmin/user_upload/PDF/Vorschriften_und_Richtlinien/RK-Gesetz-2024-web.pdf"
+  ],
+  "ebene": "L0-recht",
+  "verbindlichkeit": "gesetz",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "recht@roteskreuz.at",
+    "review_intervall_monate": 12,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "gesetz",
+        "bezeichnung": "Rotkreuzgesetz (RKG), BGBl. I Nr. 33/2008, in Kraft seit 01.02.2008, idF BGBl. I Nr. 55/2021, 39/2024, 103/2024",
+        "fundstelle": "§§ 5, 6, 8, 9 sowie Erläuterungen",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "gesetz",
+        "bezeichnung": "Genfer Abkommen vom 12.08.1949 samt Zusatzprotokollen I und II (1977) und III (2005)",
+        "fundstelle": "Verwendung, Zweck und Anbringung der Schutzzeichen"
+      },
+      {
+        "typ": "pdf",
+        "bezeichnung": "ÖRK-Broschüre „Das Rotkreuzgesetz“, Abteilung Recht und Migration, 2024",
+        "fundstelle": "https://www.roteskreuz.at/fileadmin/user_upload/PDF/Vorschriften_und_Richtlinien/RK-Gesetz-2024-web.pdf",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "IFRC Brand System – Emblems and Movement logo",
+        "fundstelle": "https://brand.ifrc.org/ifrc-brand-system/basics/logo/emblems",
+        "abgerufen_am": "2026-08-04"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "gueltig_ab": "2008-02-01",
+  "gueltig_bis": null,
+  "kernaussage": "Das Rotkreuzzeichen ist kein Logo, sondern ein völkerrechtlich geschütztes Zeichen. Jede Gestaltungsregel des ÖRK-CD ist diesem Rahmen nachgeordnet. Bei Widerspruch zwischen einer CD-Regel und diesem Datensatz gilt immer dieser Datensatz.",
+  "verwendungsarten": {
+    "schutzzeichen": {
+      "englisch": "protective use",
+      "zweck": "Signalisiert, dass die gekennzeichneten Personen oder Sachen den besonderen Schutz der Genfer Abkommen genießen.",
+      "wer": "Sanitätsdienste der Streitkräfte, zivile Krankenhäuser und Sanitätseinheiten, anerkannte nationale Gesellschaften, freiwillige Hilfsgesellschaften, IKRK und IFRC.",
+      "groessenregel": "Muss groß und auffällig sein – im Verhältnis zur gekennzeichneten Person oder Sache so groß wie möglich.",
+      "gestaltung": "Ohne Zusätze. Kein Schriftzug, kein Landesname, kein Beiwerk.",
+      "voraussetzung_oesterreich": "In Zeiten eines bewaffneten Konflikts, an dem Österreich beteiligt ist, nur mit Zustimmung der Militärbehörde (Bundesminister für Landesverteidigung und nachgeordnete Dienststellen).",
+      "rechtsgrundlage": "RKG § 6; Genfer Abkommen"
+    },
+    "kennzeichen": {
+      "englisch": "indicative use",
+      "zweck": "Zeigt die Zugehörigkeit zur Rotkreuz- und Rothalbmondbewegung. Gewährt KEINEN Schutz nach den Genfer Abkommen.",
+      "wer": "Das ÖRK selbst; seine Landesverbände, Bezirksstellen mit Rechtspersönlichkeit (Tirol) und Tochterfirmen, soweit vom ÖRK ermächtigt; darüber hinaus andere Personen und Einrichtungen nur mit ausdrücklicher Ermächtigung des ÖRK im Zusammenhang mit Rotkreuzaufgaben.",
+      "groessenregel_frieden": "Frei gestaltbar – hier greift das Corporate Design.",
+      "groessenregel_konflikt": "Im bewaffneten Konflikt muss das Kennzeichen KLEINER sein als das Schutzzeichen und darf weder auf Armbinden noch auf Dächern angebracht werden.",
+      "gestaltung": "Wird üblicherweise mit dem Schriftzug bzw. dem Namen der Gesellschaft kombiniert (ÖRK-Wort-Bild-Marke).",
+      "rechtsgrundlage": "RKG § 5"
+    }
+  },
+  "gestaltungsregeln_absolut": [
+    {
+      "regel": "Das Kreuz ist immer einfarbig, deckend rot.",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System",
+      "hinweis": "Keine Verläufe, keine Transparenz, keine Rasterung, keine Schmuckfarben-Effekte."
+    },
+    {
+      "regel": "Das Kreuz steht immer auf weißem Grund. Keine Abweichung – auch kein Beige, kein Grau, keine Tönung.",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System"
+    },
+    {
+      "regel": "Die Form des Kreuzes darf niemals verändert werden (nicht verzerren, drehen, abrunden, stilisieren, perspektivisch verzerren).",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System"
+    },
+    {
+      "regel": "Niemals dreidimensional darstellen.",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System"
+    },
+    {
+      "regel": "Niemals als Muster, Bordüre oder in Serie wiederholt verwenden.",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System"
+    },
+    {
+      "regel": "Nichts darf über dem Kreuz oder seinem weißen Grund liegen – kein Text, kein Objekt, keine Grafik.",
+      "maschinell_pruefbar": true,
+      "quelle": "IFRC Brand System"
+    },
+    {
+      "regel": "Das Zeichen NIEMALS invertieren. Ein weißes Kreuz auf rotem Grund ist nicht die Negativvariante des Logos, sondern das Wappen der Schweizerischen Eidgenossenschaft – dessen Verwendung ist gesondert verboten.",
+      "maschinell_pruefbar": true,
+      "quelle": "RKG § 8 Abs. 2",
+      "hinweis": "Das ist der häufigste und folgenschwerste Fehler bei automatisierter Gestaltung: Ein Generator, der ein Logo 'für dunklen Hintergrund' invertiert, erzeugt hier einen Rechtsverstoß."
+    },
+    {
+      "regel": "Keine Nachahmungen und keine verwechselbaren Zeichen – auch nicht in abgewandelter Form, auch nicht als Bestandteil eines anderen Zeichens.",
+      "maschinell_pruefbar": false,
+      "quelle": "RKG § 8 Abs. 1 lit. d"
+    },
+    {
+      "regel": "Das Zeichen darf nicht als Deko-Element, Aufzählungszeichen, Icon-Ersatz oder Gestaltungsmuster zweckentfremdet werden.",
+      "maschinell_pruefbar": false,
+      "quelle": "ÖRK-CD, abgeleitet aus RKG § 8"
+    }
+  ],
+  "ebenfalls_geschuetzt": [
+    "Roter Halbmond auf weißem Grund",
+    "Roter Kristall auf weißem Grund (Zusatzprotokoll III)",
+    "Roter Löwe mit roter Sonne auf weißem Grund",
+    "Die Wortfolgen „Rotes Kreuz“, „Genfer Kreuz“, „Roter Halbmond“, „Roter Kristall“ in allen Sprachen",
+    "Das Wappen der Schweizerischen Eidgenossenschaft (weißes Kreuz auf rotem Grund) sowie Nachahmungen davon"
+  ],
+  "sanktionen": {
+    "rechtsgrundlage": "RKG § 9",
+    "verwaltungsstrafe_regelfall_eur": {
+      "von": 360,
+      "bis": 3600
+    },
+    "verwaltungsstrafe_breite_oeffentlichkeit_eur": {
+      "von": 800,
+      "bis": 15000
+    },
+    "weitere_folgen": [
+      "Gegenstände mit dem geschützten Zeichen können für verfallen erklärt werden.",
+      "Das ÖRK kann die Veröffentlichung von Teilen des Strafbescheids beantragen.",
+      "Marken, die das Zeichen ohne Zustimmung des ÖRK enthalten, sind auf Antrag zu löschen (RKG § 8 Abs. 3)."
+    ]
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Diese Regeln zitieren und bei jeder Gestaltungsfrage mit Emblembezug anwenden.",
+      "Auf die Unterscheidung Schutzzeichen/Kennzeichen hinweisen, wenn ein Nutzer sie erkennbar verwechselt.",
+      "Bei Anfragen Dritter erklären, dass eine Verwendung eine ausdrückliche Ermächtigung des ÖRK erfordert."
+    ],
+    "darf_nicht": [
+      "Das Emblem in generierten Bildern, Grafiken oder Videos frei platzieren, abwandeln, invertieren oder nachbilden.",
+      "Dritten eine Verwendungserlaubnis in Aussicht stellen oder erteilen – das kann ausschließlich das ÖRK.",
+      "Aus dem Fehlen einer Detailregel schließen, dass etwas erlaubt ist. Im Emblemrecht gilt der umgekehrte Grundsatz.",
+      "Diese Datei als Rechtsberatung ausgeben."
+    ],
+    "bei_unsicherheit": "Keine Gestaltung erzeugen. An recht@roteskreuz.at (rechtliche Fragen) bzw. cd@roteskreuz.at (Gestaltungsfragen) verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Gibt es eine ÖRK-interne Richtlinie, die die Ermächtigung Dritter nach § 5 Abs. 1 RKG operationalisiert (Antragsweg, Kriterien, Musterverträge)?",
+      "blockiert": "Automatisierte Auskunft an Kooperationspartner, ob und wie sie das Zeichen führen dürfen.",
+      "zustaendig": "recht@roteskreuz.at"
+    },
+    {
+      "frage": "Existiert eine verbindliche ÖRK-Festlegung zur Mindestgröße des Kennzeichens, ab der die Erkennbarkeit als geschützt gilt?",
+      "blockiert": "Maschinelle Prüfung von Kleinstanwendungen (Favicon, Stickpunkt auf Kleidung, Give-aways).",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$description": "ÖRK Typografie-Token im W3C Design Tokens Format (DTCG 2025.10).",
+
+  "$extensions": {
+    "at.roteskreuz.cd": {
+      "record": {
+        "id": "tokens-typografie",
+        "ebene": "L1-marke",
+        "verbindlichkeit": "cd-verbindlich",
+        "quellenlage": "abgeleitet",
+        "sichtbarkeit": "oeffentlich",
+        "governance": { "owner": "cd@roteskreuz.at", "review_intervall_monate": 12, "geprueft_am": null },
+        "provenance": {
+          "quellen": [
+            { "typ": "webseite", "bezeichnung": "ÖRK Styleguide – Grundelemente → Typografie", "fundstelle": "https://design.roteskreuz.at/grundelemente/typografie", "abgerufen_am": "2026-08-04" },
+            { "typ": "vorlage", "bezeichnung": "Skriptum.dotx", "fundstelle": "word/styles.xml, docDefaults – nur für die Punktgrößen" },
+            { "typ": "pdf", "bezeichnung": "Fahrzeug-Design 17 Manual", "fundstelle": "S. 12–13, bestätigt den Schriftnamen" }
+          ],
+          "methode": "ki-extraktion",
+          "erstellt_am": "2026-08-04",
+          "human_verified": false
+        }
+      },
+      "korrektur_2026_08_04": "Die Ersatzschrift ist laut offiziellem Styleguide ARIAL (bzw. Helvetica auf Mac), NICHT Verdana. Die frühere Angabe 'Verdana' stammte aus der Word-Vorlage und war eine Fehlableitung. Ergänzt wurde außerdem der fünfte Schnitt 'Signs'.",
+      "ausnahmen_von_der_hausschrift": [
+        "Im E-Mail-Verkehr, auf offiziellen ÖRK-Websites und in Social-Media-Kanälen, die Dunant nicht unterstützen, darf aus technischen Gründen Arial bzw. Helvetica verwendet werden.",
+        "In periodisch erscheinenden ÖRK-Magazinen dürfen wegen des eigenständigen Layouts auch andere Schriften verwendet werden."
+      ],
+      "schmuckschrift": "Für die digitale Anwendung ist bewusst KEINE Schmuckschrift definiert, da sie das Markenbild schwächen würde. Einzelfälle (z.B. Team-Österreich-Tafel-Jubiläumslogo) nur nach Rücksprache mit der Marketingabteilung des Landesverbands.",
+      "lizenz": "Dunant wird vom ÖRK selbst über den Styleguide als OTF-ZIP und als Web-Fonts-ZIP bereitgestellt. Plattformübergreifend für Windows und macOS. Offen bleibt, ob die Lizenz die Einbettung in automatisiert erzeugte Dokumente und die Weitergabe an Dritte abdeckt.",
+      "hinweis_groessen": "Die Punktgrößen stammen aus der Word-Vorlage und gelten für das Format Skriptum/A4. Sie sind KEINE allgemeine Typoskala für alle Medien. Für Digital fehlt eine eigene Skala."
+    }
+  },
+
+  "schrift": {
+    "familie": {
+      "$type": "fontFamily",
+      "haus":     { "$value": ["Dunant", "Arial", "Helvetica", "sans-serif"], "$description": "Hausschrift mit offizieller Ausweichkette. Arial (Windows) bzw. Helvetica (Mac) ausschließlich, wenn Dunant technisch nicht verfügbar ist – nicht als gestalterische Alternative." },
+      "ersatz":   { "$value": ["Arial", "Helvetica", "sans-serif"], "$description": "Offizielle Ersatzschrift. Verwendete Schnitte: Arial Bold und Arial Regular. Ersatz für Dunant Light ist Arial Regular." }
+    },
+
+    "schnitt": {
+      "$type": "fontWeight",
+      "light":   { "$value": 300, "$description": "Ersatz bei Arial: Regular (400)." },
+      "regular": { "$value": 400 },
+      "medium":  { "$value": 500 },
+      "bold":    { "$value": 700 },
+      "signs":   { "$value": 400, "$description": "Fünfter Schnitt der Dunant. Symbol-/Zeichensatz, kein Textschnitt – nicht für Fließtext verwenden." }
+    },
+
+    "groesse": {
+      "$type": "dimension",
+      "footer":        { "$value": { "value": 7,  "unit": "pt" } },
+      "quellenhinweis":{ "$value": { "value": 8,  "unit": "pt" } },
+      "body":          { "$value": { "value": 10, "unit": "pt" } },
+      "ueberschrift-4":{ "$value": { "value": 12, "unit": "pt" } },
+      "ueberschrift-3":{ "$value": { "value": 12, "unit": "pt" } },
+      "ueberschrift-2":{ "$value": { "value": 14, "unit": "pt" } },
+      "ueberschrift-1":{ "$value": { "value": 16, "unit": "pt" } },
+      "verzeichnis":   { "$value": { "value": 20, "unit": "pt" } },
+      "untertitel":    { "$value": { "value": 24, "unit": "pt" } },
+      "titel":         { "$value": { "value": 36, "unit": "pt" } }
+    },
+
+    "stil": {
+      "$type": "typography",
+      "$description": "Zusammengesetzte Token – das sind die Werte, die in Vorlagen und Gestaltung tatsächlich referenziert werden.",
+
+      "deckblatt-titel": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.regular}", "fontSize": "{schrift.groesse.titel}", "lineHeight": 1.15 }
+      },
+      "deckblatt-untertitel": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.regular}", "fontSize": "{schrift.groesse.untertitel}", "lineHeight": 1.2 }
+      },
+      "ueberschrift-1": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.medium}", "fontSize": "{schrift.groesse.ueberschrift-1}", "lineHeight": 1.25 }
+      },
+      "ueberschrift-2": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.medium}", "fontSize": "{schrift.groesse.ueberschrift-2}", "lineHeight": 1.3 }
+      },
+      "body": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.regular}", "fontSize": "{schrift.groesse.body}", "lineHeight": 1.4 }
+      },
+      "footer": {
+        "$value": { "fontFamily": "{schrift.familie.haus}", "fontWeight": "{schrift.schnitt.light}", "fontSize": "{schrift.groesse.footer}", "lineHeight": 1.2 }
+      }
+    }
+  }
+}

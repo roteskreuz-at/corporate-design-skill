@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://design.roteskreuz.at/cd/v1/schema/manifest.schema.json",
+  "title": "ÖRK CD – Manifest",
+  "description": "Schema für manifest.json. In der Vorgängerversion hatte das Manifest als einzige Datei kein Schema und wies über $schema fälschlich auf das Draft-07-Metaschema – es behauptete damit, selbst ein Schema zu sein.",
+  "type": "object",
+  "required": ["manifest_version", "name", "titel", "sprache", "stand", "praezedenz", "statusmodell", "eintraege", "kontakte"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "manifest_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "name": { "type": "string" },
+    "titel": { "type": "string" },
+    "beschreibung": { "type": "string" },
+    "sprache": { "type": "string" },
+    "herausgeber": { "type": "string" },
+    "kanonische_url": { "type": "string", "format": "uri" },
+    "stand": { "type": "string", "format": "date" },
+    "lizenz": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "praezedenz": {
+      "type": "object",
+      "required": ["reihenfolge"],
+      "properties": {
+        "beschreibung": { "type": "string" },
+        "reihenfolge": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["L0-recht", "L1-marke", "L2-anwendung", "L3-vorlage", "L4-subbrand"] },
+          "minItems": 5,
+          "uniqueItems": true
+        }
+      }
+    },
+    "statusmodell": {
+      "type": "object",
+      "required": ["verbindlichkeit", "quellenlage"],
+      "properties": {
+        "hinweis": { "type": "string" },
+        "verbindlichkeit": { "type": "object" },
+        "quellenlage": { "type": "object" }
+      }
+    },
+    "einstieg_fuer_maschinen": { "type": "array", "items": { "type": "string" } },
+    "eintraege": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "datei", "ebene", "verbindlichkeit", "quellenlage", "sichtbarkeit", "titel"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "datei": { "type": "string" },
+          "ebene": { "type": "string", "enum": ["L0-recht", "L1-marke", "L2-anwendung", "L3-vorlage", "L4-subbrand"] },
+          "verbindlichkeit": { "type": "string", "enum": ["gesetz", "cd-verbindlich", "empfehlung", "konvention"] },
+          "quellenlage": { "type": "string", "enum": ["offiziell-vollstaendig", "offiziell-teilweise", "abgeleitet", "unbelegt", "nicht-erhoben"] },
+          "sichtbarkeit": { "type": "string", "enum": ["oeffentlich", "intern", "vertraulich"] },
+          "titel": { "type": "string" },
+          "format": { "type": "string" },
+          "zuerst_lesen": { "type": "boolean" },
+          "warnung": { "type": "string" }
+        }
+      }
+    },
+    "nicht_migriert": { "type": "object" },
+    "auslieferung": { "type": "object" },
+    "kontakte": {
+      "type": "object",
+      "required": ["gestaltung"],
+      "additionalProperties": { "type": "string", "format": "email" }
+    },
+    "qualitaetssicherung": { "type": "object" }
+  }
+}

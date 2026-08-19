@@ -1,0 +1,202 @@
+{
+  "$schema": "../schema/record.schema.json",
+  "id": "logo",
+  "titel": "Logo – Aufbau, Schutzzone, Mindestgrößen, Varianten",
+  "sprache": "de",
+  "quelle_kanonisch": "https://design.roteskreuz.at/grundelemente/logo",
+  "quellen_weitere": [
+    "https://design.roteskreuz.at/grundelemente/logo/analoge-anwendungen",
+    "https://design.roteskreuz.at/grundelemente/logo/digitale-anwendungen"
+  ],
+  "ebene": "L1-marke",
+  "verbindlichkeit": "cd-verbindlich",
+  "quellenlage": "offiziell-vollstaendig",
+  "sichtbarkeit": "oeffentlich",
+  "governance": {
+    "owner": "cd@roteskreuz.at",
+    "review_intervall_monate": 12,
+    "geprueft_am": null,
+    "geprueft_von": null,
+    "naechste_pruefung": null
+  },
+  "provenance": {
+    "quellen": [
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Logo, Analoge Anwendungen",
+        "fundstelle": "https://design.roteskreuz.at/grundelemente/logo/analoge-anwendungen",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "webseite",
+        "bezeichnung": "ÖRK Styleguide – Logo, Digitale Anwendungen",
+        "fundstelle": "https://design.roteskreuz.at/grundelemente/logo/digitale-anwendungen",
+        "abgerufen_am": "2026-08-04"
+      },
+      {
+        "typ": "beschluss",
+        "bezeichnung": "Rotkreuz-Geschäftsleiter",
+        "fundstelle": "Sonderlogo beschlossen am 15.11.2012"
+      }
+    ],
+    "methode": "ki-extraktion",
+    "werkzeug": "Claude Opus 5 / Claude Code",
+    "erstellt_am": "2026-08-04",
+    "human_verified": false,
+    "verified_von": null
+  },
+  "praezedenz_hinweis": "Nachgeordnet zu rules/emblem-recht.json. Diese Datei regelt die Gestaltung, nicht die Zulässigkeit der Zeichenführung.",
+  "aufbau": {
+    "definition": "Das Logo besteht immer und ausschließlich aus dem Wahrzeichen und dem ausgeschriebenen Schriftzug „ÖSTERREICHISCHES ROTES KREUZ“.",
+    "hintergrund": "Logo und die es umgebende Schutzzone müssen auf weißem Hintergrund stehen.",
+    "zeiligkeit": [
+      "einzeilig",
+      "zweizeilig"
+    ],
+    "sprachversionen": [
+      "Deutsch",
+      "Englisch",
+      "Französisch",
+      "Portugiesisch"
+    ],
+    "regionalisierung": {
+      "regel": "Für Publikationen eines einzelnen Landesverbands kann die Logomutation mit Landesverbandszusatz verwendet werden.",
+      "grenze": "Es gibt keine Bezirks- oder Ortsstellenlogos. Regionalisierung und Zusatzinformationen gehören in die Infoleiste."
+    }
+  },
+  "masseinheit": {
+    "einheit": "E",
+    "definition": "1 E = Balkenlänge der Quadrate im Wahrzeichen. Alle Abstände im Logo sind in dieser Einheit angegeben.",
+    "hinweis": "Die Schutzzone ist damit relativ, nicht absolut – sie skaliert mit dem Logo."
+  },
+  "schutzzone": {
+    "hauptlogo": {
+      "wert_E": 1.5,
+      "regel": "Mindestabstand zu anderen Designelementen: 1,5 E nach allen Seiten, ausgehend von den Außenkanten der Logo-Slogan-Kombination."
+    },
+    "sonderlogo_basislogo": {
+      "form": "quadratisch",
+      "regel": "Der Mindestabstand ausgehend von den Außenkanten schafft eine quadratische Schutzzone. Bezugspunkte digital: Oberkante des Rotkreuz-Signets und Unterkante des Schriftzugs. Maßeinheit ist die Kreuzbalkenhöhe (E)."
+    }
+  },
+  "mindestgroessen": {
+    "hauptlogo_zweizeilig_mit_slogan_mm": 17,
+    "hauptlogo_einzeilig_mit_slogan_mm": 35,
+    "hauptlogo_zweizeilig_ohne_slogan_mm": 13,
+    "sonderlogo_print_mm": 13,
+    "basislogo_digital_px": 120,
+    "regeln": [
+      "Wird das Mindestmaß mit Slogan unterschritten, ist auf den Slogan zu verzichten – die Lesbarkeit ist dann nicht mehr gewährleistet.",
+      "Das Mindestmaß des Logos ohne Slogan darf im Printbereich nicht unterschritten werden.",
+      "Digital wird 120 x 120 px empfohlen. Muss es unterschritten werden (z.B. Banner-Ads), ist der identitätsstiftende Zweck des Logos vor der Lesbarkeit zu priorisieren.",
+      "Bei Werbemitteln mit weniger Platz als der Mindestgröße ist der Einsatz mit dem Generalsekretariat abzustimmen (cd@roteskreuz.at)."
+    ]
+  },
+  "varianten": {
+    "hauptlogo": "Überregional, für Publikationen. In der deutschen Version grundsätzlich mit Slogan.",
+    "sonderlogo": {
+      "beschlossen_am": "2012-11-15",
+      "zweck": "Wo bessere Rotkreuz-Sichtbarkeit gefordert ist und das rote Kreuz im Hauptlogo zu klein wirkt – Logoleisten, Fahnen, Gebäudebeschriftung.",
+      "aufbau": "Ohne Landesverbandszusatz und ohne Slogan. Inklusive Schutzzone quadratisch, stark am zweizeiligen Hauptlogo orientiert, das rote Kreuz ist um 65 % größer."
+    },
+    "basislogo": {
+      "hinweis": "Laut Corporate Design 2026 heißt das Sonderlogo in der digitalen Anwendung „Basislogo“. Gleiche Datei, anderer Name je Kontext.",
+      "schriftzug": "„Österreichisches Rotes Kreuz“ in Dunant Bold",
+      "erkennungshilfe": "Beim Basislogo reicht der Querbalken des Kreuzes vom T bis zum dritten E in „Österreichisches“."
+    },
+    "schwarz_weiss": "Alle Varianten existieren als Schwarz-Weiß-Version für Schwarz-Weiß-Produktionen. Das Wahrzeichen wird dabei in 50 % Schwarz gedruckt.",
+    "konturen": "Konturen-Version für Gravuren, z.B. auf Werbemitteln.",
+    "bundeswappen": {
+      "zweck": "Feierlicher, besonders ehrenvoller Zusammenhang – Urkunden, Medaillen.",
+      "genehmigung": "Verwendung und Genehmigung allein dem ÖRK-Generalsekretariat vorbehalten (cd@roteskreuz.at)."
+    }
+  },
+  "slogan": {
+    "wortlaut": "Aus Liebe zum Menschen",
+    "regeln": [
+      "Kommt zum Einsatz, wann immer möglich.",
+      "Tritt typografisch nie allein auf, sondern immer in Verbindung mit dem Logo und nur im definierten Schriftbild.",
+      "Steht in festgelegtem Abstand und Größenverhältnis unterhalb des Logos oder links davon.",
+      "In Ausnahmefällen rechts oder getrennt vom Logo – nur mit Genehmigung des Generalsekretariats.",
+      "Im Fließtext dürfen die Worte selbstverständlich auch ohne Logo vorkommen.",
+      "Digital wird der Slogan nur im Rahmen überregionaler Kampagnen verwendet (z.B. „WIR SIND DA“)."
+    ]
+  },
+  "verbote": {
+    "grundsatz": "Das Logo wird nur in Form der verfügbaren Logodatei verwendet. Eine Veränderung ist in keiner Weise zulässig.",
+    "liste": [
+      {
+        "verbot": "Farbänderungen",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Verzerrung",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Inverse Schrift oder Konturdarstellung",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Logo auf Bild, ohne weißen Hintergrund",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Schattierung",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Kreuz alleine (ohne Schriftzug)",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Konturversion des Kreuzes",
+        "maschinell_pruefbar": true
+      },
+      {
+        "verbot": "Logo transparent",
+        "maschinell_pruefbar": true
+      }
+    ]
+  },
+  "assets": {
+    "bezugsquelle": "https://design.roteskreuz.at/grundelemente/logo",
+    "lieferumfang": "Pro Variante ein ZIP mit EPS (CMYK und S/W), Pantone-Datei und JPG (S/W, RGB).",
+    "varianten_verfuegbar": [
+      "Logo mit Slogan, einzeilig",
+      "Logo mit Slogan, zweizeilig",
+      "Logo ohne Slogan, einzeilig",
+      "Logo ohne Slogan, zweizeilig",
+      "Sonder-/Basislogo (DE, EN, FR; EN zusätzlich als Konturenversion EPS)"
+    ],
+    "zusatzmaterial": [
+      "Poster Basislogo A4 (PDF)",
+      "Poster Basislogo (Druck-PDF)",
+      "Erklärvideo „Logo – Schutzzeichen – Kennzeichen“"
+    ]
+  },
+  "ki_hinweise": {
+    "darf": [
+      "Schutzzone und Mindestgrößen als verbindliche Werte nennen.",
+      "Die Verbotsliste zur Prüfung vorgelegter Entwürfe verwenden."
+    ],
+    "darf_nicht": [
+      "Das Logo nachbauen, nachzeichnen oder generieren – ausschließlich die bereitgestellten Dateien verwenden.",
+      "Die Schutzzone in absoluten Millimetern angeben, ohne die Bezugsgröße E zu nennen.",
+      "Bei Unterschreitung der Mindestgröße eigenmächtig eine Ausnahme annehmen."
+    ],
+    "bei_unsicherheit": "An cd@roteskreuz.at verweisen."
+  },
+  "offene_punkte": [
+    {
+      "frage": "Wie groß ist 1 E im Verhältnis zur Gesamthöhe des Logos? Ohne dieses Verhältnis lässt sich die Schutzzone nicht automatisch berechnen.",
+      "blockiert": "Automatische Prüfung von Layouts auf Einhaltung der Schutzzone.",
+      "zustaendig": "cd@roteskreuz.at"
+    },
+    {
+      "frage": "Gibt es das Logo auch als SVG? Der Lieferumfang nennt nur EPS, JPG und Pantone-Dateien.",
+      "blockiert": "Saubere Web- und App-Einbindung ohne Qualitätsverlust.",
+      "zustaendig": "cd@roteskreuz.at"
+    }
+  ]
+}
