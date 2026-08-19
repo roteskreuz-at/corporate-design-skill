@@ -1,5 +1,7 @@
 <!-- Quelle: https://design.roteskreuz.at/branding/kfz/beispiele | abgerufen 2026-08-19 -->
 
+<!-- Personenbezogene Ansprechpartner-Daten für die Repo-Veröffentlichung entfernt (DSGVO). Aktuelle Kontakte: siehe Portalseite (Quelle im Kopf). Funktionspostfächer wurden belassen. -->
+
 Beispiele: ÖRK Styleguide
  
  
@@ -335,7 +337,7 @@ Die Anpassung des Designs muss an die Bauart des Hängers angepasst werden, soll
 
 Kontakt & Rückfragen
 
-Dimitris.Nagl@w.roteskreuz.at
+[E-Mail entfernt]
  
 
  
@@ -415,9 +417,8 @@ Die elektrisch betriebenen Lastenfahrräder kommen bei Kleinambulanzen, Transpor
 Kontakt & Rückfragen
 
 Judith Plank
-Rotes Kreuz Innsbruck
-+43 512 334440
-organisation@roteskreuz-innsbruck.at
+[Name entfernt]
+[Telefon entfernt][E-Mail entfernt]
  
 
  
@@ -471,7 +472,7 @@ Im Blutspendemobil können bis zu 30 Spender:innen pro Stunde ihr Blut spenden. 
 Kontakt & Rückfragen
 
 Robert Geretschläger | Ursula Fraisl
-ursula.fraisl@roteskreuz.at
+[E-Mail entfernt]
 01/58900-353
  
  
@@ -588,14 +589,9 @@ Umsetzung: in Tirol im Herbst 2020, Bezirksstelle Innsbruck Land
 Kontakt & Rückfragen
 
 Martin Klingenschmid, Akad. M&SWU
-Bezirksstelle Innsbruck Land
-martin.klingenschmid@roteskreuz-tirol.at
-+43 57 144-2041
- 
-
- 
-
-### Fiat Ducato 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Fiat Ducato 
 
  
 
@@ -930,8 +926,8 @@ Radstand 3850 MM Tiefbettrahmen
 
 Kontakt & Rückfragen
 
-Landesverband Tirol
-stefan.hofmarcher@roteskreuz-innsbruck.at
+[Name entfernt]
+[E-Mail entfernt]
  
 
  
@@ -1119,8 +1115,8 @@ Fahrzeugdetails: Spezifika in der der Steiermark: Es  muss die Zusatzmarke „P
 
 Kontakt & Rückfragen
 
-Felix Kapper
-felix.kapper@st.roteskreuz.at
+[Name entfernt]
+[E-Mail entfernt]
 Merangasse 26, 8010 Graz, Österreich
  
 
@@ -1227,8 +1223,7 @@ Kontakt & Rückfragen
 
 Felix Kapper
 Leiter KFZ & Facility Management
-+43 50 144 5 10130
-felix.kapper@st.roteskreuz.at
+[Telefon entfernt][E-Mail entfernt]
  
 
  
@@ -1255,8 +1250,8 @@ Foliensatz: Design112
 
 Kontakt & Rückfragen
 
-Landesverband Salzburg
-thomas.wallner@s.roteskreuz.at
+[Name entfernt]
+[E-Mail entfernt]
  
 
  
@@ -1303,8 +1298,8 @@ In Kärnten wurde im Dezember 2017 ein neuer Blutspendebus ausgebaut und beklebt
 
 Kontakt & Rückfragen
 
-Manuela Ibel
-manuela.ibel@k.roteskreuz.at
+[Name entfernt]
+[E-Mail entfernt]
 050 9144 1083
  
 
@@ -1390,7 +1385,7 @@ Die Anpassung des Designs muss an die Bauart des Hängers angepasst werden, soll
 
 Kontakt & Rückfragen
 
-Dimitris.Nagl@w.roteskreuz.at
+[E-Mail entfernt]
  
  
  

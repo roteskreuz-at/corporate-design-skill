@@ -1,5 +1,7 @@
 <!-- Quelle: https://design.roteskreuz.at/branding/gebaeude/gebaeude-innen | abgerufen 2026-08-19 -->
 
+<!-- Personenbezogene Ansprechpartner-Daten für die Repo-Veröffentlichung entfernt (DSGVO). Aktuelle Kontakte: siehe Portalseite (Quelle im Kopf). Funktionspostfächer wurden belassen. -->
+
 Gebäude innen: ÖRK Styleguide
  
  
@@ -338,7 +340,7 @@ KONTAKT:
 Landesverband NÖ
 Bezirksstelle Mödling
 Ing. Thomas A. Pointner, Bezirksstellengeschäftsführer
-thomas.pointner@n.roteskreuz.at
+[E-Mail entfernt]
  
 
  
@@ -367,7 +369,7 @@ KONTAKT:
 Bezirksstelle St. Pölten
 Dr. Theodor Körner-Straße 43
 3100 Sankt Pölten
-lukas.huerner@n.roteskreuz.at
+[E-Mail entfernt]
  
 
  
@@ -393,7 +395,7 @@ ERSCHEINUNGSJAHR:
 KONTAKT:
 Martin Klingenschmid
 Österreichisches Rotes Kreuz, LV Tirol
-martin.klingenschmid@roteskreuz-innsbruckland.at
+[E-Mail entfernt]
  
 
  
@@ -420,8 +422,8 @@ ERSCHEINUNGSJAHR:
 KONTAKT:
 David Holzer, Anna Ennemoder
 Österreichisches Rotes Kreuz, LV Tirol
-david.holzer@roteskreuz-tirol.at
-anna.ennemoser@t.roteskreuz.at
+[E-Mail entfernt]
+[E-Mail entfernt]
  
 
  
@@ -444,8 +446,8 @@ ERSCHEINUNGSJAHR:
 KONTAKT:
 Daniel Struggl
 Österreichisches Rotes Kreuz, LV Tirol
-Bezirksstelle Telfs
-daniel.struggl@roteskreuz-telfs.at
+[Name entfernt]
+[E-Mail entfernt]
  
 
  
@@ -491,7 +493,7 @@ Tobias Mindler
 Österreichisches Rotes Kreuz, LV Burgenland
 Henri Dunant-Straße 4
 7000 Eisenstadt
-tobias.mindler@b.roteskreuz.at
+[E-Mail entfernt]
  
  
  

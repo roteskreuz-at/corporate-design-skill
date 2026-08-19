@@ -1,5 +1,7 @@
 <!-- Quelle: https://design.roteskreuz.at/branding/gebaeude/gebaeude-aussen | abgerufen 2026-08-19 -->
 
+<!-- Personenbezogene Ansprechpartner-Daten für die Repo-Veröffentlichung entfernt (DSGVO). Aktuelle Kontakte: siehe Portalseite (Quelle im Kopf). Funktionspostfächer wurden belassen. -->
+
 Gebäude außen: ÖRK Styleguide
  
  
@@ -352,7 +354,7 @@ KONTAKT:
 Bezirksstelle St. Pölten
 Dr. Theodor Körner-Straße 43
 3100 Sankt Pölten
-lukas.huerner@n.roteskreuz.at
+[E-Mail entfernt]
  
 
  
@@ -378,8 +380,8 @@ ERSCHEINUNGSJAHR:
 KONTAKT:
 Österreichisches Rotes Kreuz
 Bezirksstelle Bruck a. d. Leitha
-florian.schodritz@n.roteskreuz.at
-harald.fischer@n.roteskreuz.at
+[E-Mail entfernt]
+[E-Mail entfernt]
  
 
  
@@ -406,22 +408,7 @@ KONTAKT:
 Bezirksstelle Eisenstadt
 Henri Dunant Strasse 4
 7000 Eisenstadt
-+43 2682 645 55
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- Sie sind hier:
+[Telefon entfernt]Sie sind hier:
  
 
  

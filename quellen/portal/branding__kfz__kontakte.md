@@ -1,5 +1,7 @@
 <!-- Quelle: https://design.roteskreuz.at/branding/kfz/kontakte | abgerufen 2026-08-19 -->
 
+<!-- Personenbezogene Ansprechpartner-Daten für die Repo-Veröffentlichung entfernt (DSGVO). Aktuelle Kontakte: siehe Portalseite (Quelle im Kopf). Funktionspostfächer wurden belassen. -->
+
 Kontakte: ÖRK Styleguide
  
  
@@ -312,130 +314,58 @@ Kontakte in den Bundesländern
 ### Burgenland 
 
  
-Christoph Frimmel
-christoph.frimmel@b.roteskreuz.at
-+435701449071
- 
- 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Kärnten 
 
  
-
-### Kärnten 
-
- 
-Manuela Ibel
-manuela.ibel@k.roteskreuz.at
-+435091441083
- 
- 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Niederösterreich 
 
  
-
-### Niederösterreich 
-
- 
-Markus Mottl
-Markus.Mottl@n.roteskreuz.at
-+435914450330
- 
- 
-
- 
-
-### Oberösterreich 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Oberösterreich 
 
  
 Gerald Weichselbaumer
 kfz@o.roteskreuz.at
-+437327644541
- 
- 
+[Telefon entfernt]### Salzburg 
 
  
-
-### Salzburg 
-
- 
-Thomas Wallner
-thomas.wallner@s.roteskreuz.at
-+4366281440
- 
- 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Steiermark 
 
  
-
-### Steiermark 
-
- 
-Jonas Hohenecker
-jonas.hohenecker@st.rotesreuz.at
-+4350144510131
- 
- 
-
- 
-
-### Tirol 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Tirol 
 
  
 Rotes Kreuz Tirol Gemeinnützige Rettungsdienst GmbH
 Michael Perle
 fuhrpark@rettungsdienst-tirol.at
-+436646046631034
-
-Rotes Kreuz Tirol (Vereinsfahrzeuge)
-Christine Widmann
-christine.widmann@roteskreuz-tirol.at
-+4366488631155
- 
- 
+[Telefon entfernt]Rotes Kreuz Tirol (Vereinsfahrzeuge)
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Vorarlberg 
 
  
-
-### Vorarlberg 
-
- 
-Michael Hrach, MSc
-Michael.hrach@v.roteskreuz.at
-+435522770009061 | m: +436644265030
- 
- 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]| m: [Telefon entfernt]### Wien 
 
  
-
-### Wien 
-
- 
-Stefan Kurka
-stefan.kurka@w.roteskreuz.at
-+431795805222
- 
- 
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]### Generalsekretariat 
 
  
-
-### Generalsekretariat 
-
- 
-Ursula Fraisl
-ursula.fraisl@roteskreuz.at
-+43158900353
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- Sie sind hier:
+[Name entfernt]
+[E-Mail entfernt]
+[Telefon entfernt]Sie sind hier:
  
 
  

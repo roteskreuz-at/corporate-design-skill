@@ -28,11 +28,12 @@ Eingebaute Leitplanken: Das rote Kreuz wird niemals generiert oder nachgebaut
 ## Installation
 
 ```bash
-git clone <repo-url> ~/.claude/skills/oerk-cd
+git clone https://github.com/roteskreuz-at/corporate-design-skill ~/.claude/skills/oerk-cd
 ```
 
 Mehr braucht es nicht — Claude Code lädt Skills aus `~/.claude/skills/`
-automatisch. Optional: Hausschrift Dunant lokal installieren (Download über
+automatisch. Für alle anderen Werkzeuge (Claude.ai, ChatGPT, Copilot, Gemini,
+Cursor u. a.) steht der Weg in der [ANLEITUNG.md](ANLEITUNG.md). Optional: Hausschrift Dunant lokal installieren (Download über
 design.roteskreuz.at, Lizenz beachten); ohne sie verwendet der Skill die
 offiziellen Ersatzschriften Arial/Helvetica.
 
@@ -41,6 +42,7 @@ offiziellen Ersatzschriften Arial/Helvetica.
 | Pfad | Inhalt |
 |---|---|
 | `SKILL.md` | Einstieg: Kernwerte, Leitplanken, Arbeitsablauf |
+| `ANLEITUNG.md` | Einbindung in Claude, ChatGPT, Copilot, Gemini, Cursor u. a. |
 | `references/` | 13 destillierte Referenzen (Farben, Logo, Emblemrecht, …) |
 | `data/` | Maschinenlesbare Quelle: W3C-Design-Tokens, Regeln, Domains, Schemas |
 | `assets/logos/` | ÖRK-Basislogo, Sonderlogo, ÖJRK-Logo (deutsch) |
@@ -59,7 +61,11 @@ offiziellen Ersatzschriften Arial/Helvetica.
 
 ## Rechtliches
 
-Das Rotkreuzzeichen ist völkerrechtlich geschützt (Genfer Abkommen,
-Rotkreuzgesetz); Logos und Portalinhalte gehören dem Österreichischen Roten
-Kreuz. Dieses Repository ist für die Arbeit im und für das ÖRK gedacht — keine
-Verwendung der Marken- und Bildbestandteile außerhalb dieses Rahmens.
+Alle Inhalte stammen von öffentlich abrufbaren Seiten und Dateien des
+Styleguide-Portals design.roteskreuz.at. Das Rotkreuzzeichen ist
+völkerrechtlich geschützt (Genfer Abkommen, Rotkreuzgesetz); Logos, Texte und
+Vorlagen gehören dem Österreichischen Roten Kreuz und stehen unter keiner
+freien Lizenz. Dieses Repository ist für die Arbeit im und für das ÖRK
+gedacht — keine Verwendung der Marken- und Bildbestandteile außerhalb dieses
+Rahmens. Personenbezogene Ansprechpartner-Daten des Portals wurden aus den
+gespiegelten Rohtexten entfernt.
