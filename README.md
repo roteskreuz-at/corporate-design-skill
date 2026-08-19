@@ -7,7 +7,7 @@ Jugendrotkreuz.
 
 **Kein offizielles Produkt des ÖRK.** Alle Inhalte sind maschinell aus dem
 offiziellen Styleguide design.roteskreuz.at (63 Seiten, erhoben 2026-08-19) und
-den dort hinterlegten Dateien extrahiert und **nicht fachlich freigegeben**.
+den dort hinterlegten Dateien extrahiert.
 Verbindliche Auskünfte gibt cd@roteskreuz.at.
 
 ## Was der Skill kann
