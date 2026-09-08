@@ -69,3 +69,7 @@ freien Lizenz. Dieses Repository ist für die Arbeit im und für das ÖRK
 gedacht — keine Verwendung der Marken- und Bildbestandteile außerhalb dieses
 Rahmens. Personenbezogene Ansprechpartner-Daten des Portals wurden aus den
 gespiegelten Rohtexten entfernt.
+
+## Verwandte Projekte
+
+- [icons-skill](https://github.com/roteskreuz-at/icons-skill): Piktogramme im Rotkreuz-Look als Claude-Skill und Python-Bibliothek, 65 fertige Icons, Zeichenregeln für neue. Nutzt die Farben und Regeln aus diesem Skill.
