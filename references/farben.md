@@ -67,7 +67,7 @@ Die verbindlichen Werte laut CD-Handbuch (Quelle: https://design.roteskreuz.at/f
 | Hellblau | 75 \| 0 \| 20 \| 5 | 0 \| 172 \| 193 | #00ACC1 |
 | Dunkelblau | 100 \| 35 \| 0 \| 25 | 0 \| 101 \| 160 | #0065A0 |
 | Violett | 65 \| 62 \| 5 \| 0 | 111 \| 105 \| 163 | #6F69A3 |
-| Lila | 40 \| 65 \| 0 \| 100 * | 166 \| 109 \| 167 | #A66DA7 |
+| Lila | 40 \| 65 \| 0 \| 0 * | 166 \| 109 \| 167 | #A66DA7 |
 | Orange | 0 \| 50 \| 100 \| 0 | 242 \| 148 \| 0 | #F29400 |
 | Gelb | 0 \| 20 \| 100 \| 10 | 235 \| 189 \| 0 | #EBBD00 |
 | Hellgrün | 40 \| 0 \| 65 \| 15 | 154 \| 184 \| 106 | #9AB86A |
@@ -75,7 +75,7 @@ Die verbindlichen Werte laut CD-Handbuch (Quelle: https://design.roteskreuz.at/f
 | Dunkeltürkis | 75 \| 0 \| 40 \| 20 | 13 \| 150 \| 142 | #0D968E |
 | Dunkelgrün | 75 \| 0 \| 75 \| 20 | 44 \| 145 \| 85 | #2C9155 |
 
-\* Unklar: Der CMYK-Wert von Lila (K=100) steht so im offiziellen PDF, widerspricht aber offensichtlich dem RGB/Hex-Wert (K=100 ergäbe nahezu Schwarz — vermutlich Tippfehler im Handbuch, plausibel wäre K=0). Für Druck vor Verwendung bei cd@roteskreuz.at klären; für Digital gilt der Hex-Wert.
+\* Fachlich bestätigt: CMYK 40|65|0|0, korrigiert am 28.09.2026 durch das ÖRK-Marketing (U. Freisl, GS). Das Akzentfarben-PDF im Portal-Download führt weiterhin fälschlich 40|65|0|100 (Stand 28.09.2026); die Korrektur der Designseite ist laut GS in Arbeit.
 
 ## Digitale Anwendungen
 

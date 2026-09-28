@@ -629,9 +629,9 @@
               40,
               65,
               0,
-              100
+              0
             ],
-            "hinweis": "CMYK laut PDF 40|65|0|100 — K=100 widerspricht dem RGB/Hex-Wert (vermutlich Tippfehler im Handbuch, plausibel K=0). Vor Druck bei cd@roteskreuz.at klären."
+            "hinweis": "CMYK 40|65|0|0 fachlich bestätigt am 2026-09-28 durch ÖRK-Marketing (U. Freisl, GS) — erste menschlich verifizierte Einzelangabe dieses Datensatzes. Das Portal-PDF (Akzentfarben.pdf) führt Stand 2026-09-28 noch den Tippfehler 40|65|0|100."
           }
         }
       },
