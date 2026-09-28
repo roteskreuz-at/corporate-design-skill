@@ -43,6 +43,7 @@ offiziellen Ersatzschriften Arial/Helvetica.
 |---|---|
 | `SKILL.md` | Einstieg: Kernwerte, Leitplanken, Arbeitsablauf |
 | `ANLEITUNG.md` | Einbindung in Claude, ChatGPT, Copilot, Gemini, Cursor u. a. |
+| `CHANGELOG.md` | Änderungsprotokoll — jede fachlich bestätigte Korrektur mit Datum und Quelle |
 | `references/` | 13 destillierte Referenzen (Farben, Logo, Emblemrecht, …) |
 | `data/` | Maschinenlesbare Quelle: W3C-Design-Tokens, Regeln, Domains, Schemas |
 | `assets/logos/` | ÖRK-Basislogo, Sonderlogo, ÖJRK-Logo (deutsch) |
