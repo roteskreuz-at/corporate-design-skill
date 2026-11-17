@@ -60,7 +60,7 @@ Diese Auflösung ist auch in `data/tokens/color.tokens.json` hinterlegt (Feld `k
 
 Zusätzlich zu den Primärfarben sind in Print- und Onlinepublikationen Akzentfarben möglich — nicht großflächig, sondern für Infografiken und Diagramme. Einzelnen Themengebieten können Akzentfarben als Schmuckfarben zugeordnet werden (Farbleitsystem in Lern-/Lehrmaterialien). **Pflicht: Ein solcher Einsatz bedarf der Genehmigung des ÖRK-Generalsekretariats (cd@roteskreuz.at).**
 
-Die verbindlichen Werte laut CD-Handbuch (Quelle: https://design.roteskreuz.at/fileadmin/user_upload/Print/Grundelemente/Farben/Akzentfarben.pdf, ausgelesen 2026-08-19):
+Die verbindlichen Werte laut CD-Handbuch (Quelle: https://design.roteskreuz.at/fileadmin/user_upload/Digitales_CD/Grundlagen/Farben/Akzentfarben.pdf, Fassung vom 07.10.2026):
 
 | Akzentfarbe | CMYK | RGB | Hex |
 |---|---|---|---|
@@ -75,7 +75,7 @@ Die verbindlichen Werte laut CD-Handbuch (Quelle: https://design.roteskreuz.at/f
 | Dunkeltürkis | 75 \| 0 \| 40 \| 20 | 13 \| 150 \| 142 | #0D968E |
 | Dunkelgrün | 75 \| 0 \| 75 \| 20 | 44 \| 145 \| 85 | #2C9155 |
 
-\* Fachlich bestätigt: CMYK 40|65|0|0, korrigiert am 28.09.2026 durch das ÖRK-Marketing (U. Freisl, GS). Das Akzentfarben-PDF im Portal-Download führt weiterhin fälschlich 40|65|0|100 (Stand 28.09.2026); die Korrektur der Designseite ist laut GS in Arbeit.
+\* Fachlich bestätigt: CMYK 40|65|0|0, korrigiert am 28.09.2026 durch das ÖRK-Marketing (GS). Das Portal verlinkt seit 07.10.2026 ein korrigiertes Akzentfarben-PDF (oben); die ältere Fassung mit dem Tippfehler 40|65|0|100 ist unter dem früheren Pfad `Print/Grundelemente/Farben/Akzentfarben.pdf` noch abrufbar — nicht verwenden.
 
 ## Digitale Anwendungen
 

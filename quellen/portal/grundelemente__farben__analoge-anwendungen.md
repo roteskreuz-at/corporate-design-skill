@@ -1,4 +1,4 @@
-<!-- Quelle: https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen | abgerufen 2026-08-19 -->
+<!-- Quelle: https://design.roteskreuz.at/grundelemente/farben/analoge-anwendungen | abgerufen 2026-11-17 -->
 
 Analoge Anwendungen: ÖRK Styleguide
  
@@ -17,7 +17,7 @@ Analoge Anwendungen: ÖRK Styleguide
  
 
  
- [BILD: Logo des Österreichischen Roten Kreuz | /_assets/d35f6381455969ce10eebbd20b705842/Images/oerk_sonderlogo_rgb-350x350.jpg?1786551461] (/) 
+ [BILD: Logo des Österreichischen Roten Kreuz | /_assets/d35f6381455969ce10eebbd20b705842/Images/oerk_sonderlogo_rgb-350x350.jpg?1794491273] (/) 
  
 
  
@@ -486,7 +486,7 @@ Folgende Akzentfarben werden zur Verwendung in den Publikationen des Österreich
 
  
 - Akzentfarben mit Farbcodes zum Rauskopieren (PDF) 
- (/fileadmin/user_upload/Print/Grundelemente/Farben/Akzentfarben.pdf) 
+ (/fileadmin/user_upload/Digitales_CD/Grundlagen/Farben/Akzentfarben.pdf) 
  
  
  
@@ -534,7 +534,7 @@ Folgende Akzentfarben werden zur Verwendung in den Publikationen des Österreich
  
 
  
- [BILD: Logo des Österreichischen Roten Kreuz | /_assets/d35f6381455969ce10eebbd20b705842/Images/oerk_sonderlogo_rgb-350x350.jpg?1786551461] 
+ [BILD: Logo des Österreichischen Roten Kreuz | /_assets/d35f6381455969ce10eebbd20b705842/Images/oerk_sonderlogo_rgb-350x350.jpg?1794491273] 
  
 
  

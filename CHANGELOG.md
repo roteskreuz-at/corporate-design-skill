@@ -4,10 +4,20 @@ Fachliche Änderungen am Regelwerk, neueste zuerst. Technische Details stehen in
 der Git-Historie; hier steht, **was sich inhaltlich geändert hat und warum** —
 insbesondere jede fachlich bestätigte Korrektur durch das ÖRK.
 
+## 2026-11-17
+
+- **Portalabgleich** (alle 63 Seiten, 423 Dateilinks): inhaltlich unverändert
+  bis auf das **Akzentfarben-PDF** — das Portal verlinkt seit 07.10.2026 eine
+  korrigierte Fassung unter `Digitales_CD/Grundlagen/Farben/Akzentfarben.pdf`
+  mit Lila CMYK 40|65|0|0. Die Korrektur vom 28.09. ist damit auch im Portal
+  belegt. Quellenpfad in `references/farben.md`, `data/tokens/color.tokens.json`
+  und `quellen/` nachgezogen; Hinweis auf die noch abrufbare Altfassung ergänzt.
+- Namensnennung bei der Lila-Korrektur durch „ÖRK-Marketing (GS)“ ersetzt.
+
 ## 2026-09-28
 
 - **Lila-Akzentfarbe: CMYK 40|65|0|0** — erste fachlich bestätigte Korrektur im
-  Datensatz (U. Freisl, GS Marketing). Der Wert 40|65|0|100 aus dem
+  Datensatz (ÖRK-Marketing, GS). Der Wert 40|65|0|100 aus dem
   Akzentfarben-PDF war ein Tippfehler; das Portal-PDF führt ihn Stand
   28.09.2026 noch, die Korrektur der Designseite ist angekündigt.
   Geändert in `references/farben.md` und `data/tokens/color.tokens.json`.

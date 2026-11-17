@@ -545,7 +545,7 @@
       }
     },
     "akzent": {
-      "$description": "Akzentfarben für Infografiken/Diagramme und thematische Farbleitsysteme. Einsatz genehmigungspflichtig durch das ÖRK-Generalsekretariat (cd@roteskreuz.at). Quelle: CD-Handbuch fileadmin/user_upload/Print/Grundelemente/Farben/Akzentfarben.pdf, ausgelesen 2026-08-19.",
+      "$description": "Akzentfarben für Infografiken/Diagramme und thematische Farbleitsysteme. Einsatz genehmigungspflichtig durch das ÖRK-Generalsekretariat (cd@roteskreuz.at). Quelle: CD-Handbuch fileadmin/user_upload/Digitales_CD/Grundlagen/Farben/Akzentfarben.pdf, Fassung vom 2026-10-07.",
       "hellblau": {
         "$value": {
           "colorSpace": "srgb",
@@ -631,7 +631,7 @@
               0,
               0
             ],
-            "hinweis": "CMYK 40|65|0|0 fachlich bestätigt am 2026-09-28 durch ÖRK-Marketing (U. Freisl, GS) — erste menschlich verifizierte Einzelangabe dieses Datensatzes. Das Portal-PDF (Akzentfarben.pdf) führt Stand 2026-09-28 noch den Tippfehler 40|65|0|100."
+            "hinweis": "CMYK 40|65|0|0 fachlich bestätigt am 2026-09-28 durch ÖRK-Marketing (GS) — erste menschlich verifizierte Einzelangabe dieses Datensatzes. Seit 2026-10-07 korrigiertes Akzentfarben.pdf im Portal; die ältere Fassung unter Print/Grundelemente/Farben/ führt noch den Tippfehler 40|65|0|100."
           }
         }
       },
